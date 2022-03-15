@@ -123,6 +123,15 @@
         <item name="android:textSize">@dimen/editext_txt_size</item>
     </style>
 
+    <style name="AutoComplete_Style" parent="TextAppearance.AppCompat">
+        <item name="android:padding">@dimen/margin_15dp</item>
+        <item name="cornerRadius">@dimen/button_corner_8dp</item>
+        <item name="android:textColor">@color/text_Color_EditText</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textSize">@dimen/editext_txt_size</item>
+        <item name="android:completionThreshold">1</item>
+    </style>
+
     <style name="EditText_Style_Outline" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="shapeAppearanceOverlay">@style/TextInputLayout_Rounded</item>
         <item name="boxStrokeWidth">@dimen/border_1dp</item>
@@ -130,9 +139,14 @@
         <item name="boxStrokeErrorColor">@color/color_inputlayout_error</item>
         <item name="boxStrokeWidthFocused">@dimen/border_2dp</item>
         <item name="hintTextColor">@color/hint_Color_EditText</item>
+        <item name="android:layout_margin">@dimen/margin_10dp</item>
 
     </style>
 
+    <style name="Spinner_Style">
+        <item name="android:layout_margin">@dimen/margin_15dp</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
     <style name="TextInputLayout_Rounded" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">@dimen/button_corner_8dp</item>

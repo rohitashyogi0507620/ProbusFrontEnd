@@ -162,11 +162,25 @@
 
                 <in.probusinsurance.probusdesign.UI.Button.ButtonOutline
                     style="@style/Button_Outline_Style"
-                    android:layout_margin="@dimen/margin_10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10dp"
                     android:text="Download Brochure"
                     app:icon="@drawable/ic_password_missmatch"></in.probusinsurance.probusdesign.UI.Button.ButtonOutline>
+
+                <in.probusinsurance.probusdesign.UI.EditText.EditTextInput
+                    style="@style/EditText_Style_Outline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <in.probusinsurance.probusdesign.UI.AutoComplete.AutoComplete
+                        style="@style/EditText_Style_Normal"
+                        android:id="@+id/autocomplete_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="RTO City"></in.probusinsurance.probusdesign.UI.AutoComplete.AutoComplete>
+                </in.probusinsurance.probusdesign.UI.EditText.EditTextInput>
+
 
                 <in.probusinsurance.probusdesign.UI.EditText.EditTextInput
                     android:id="@+id/editext_inputlayout"
@@ -179,7 +193,18 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Email Id *"></in.probusinsurance.probusdesign.UI.EditText.EmailEditText>
+
                 </in.probusinsurance.probusdesign.UI.EditText.EditTextInput>
+
+                <in.probusinsurance.probusdesign.UI.Spinner.Spinner
+                    android:id="@+id/spinner"
+                    style="@style/Spinner_Style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </in.probusinsurance.probusdesign.UI.Spinner.Spinner>
+
+
             </LinearLayout>
 
 
