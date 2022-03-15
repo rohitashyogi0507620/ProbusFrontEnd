@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProbusDesignMainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Module is Started"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="30dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+    <in.probusinsurance.probusdesign.UI.HeadingRegistrationLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_10dp"
+        app:headingtext="Customer Sign Up"
+        app:subheadingtext="Let's start with basics"></in.probusinsurance.probusdesign.UI.HeadingRegistrationLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal">
+
+        <in.probusinsurance.probusdesign.UI.RadioButton.RadioButtonGender
+            style="@style/RadioButton_Gender_Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:layout_weight="1"
+            android:text="Male"></in.probusinsurance.probusdesign.UI.RadioButton.RadioButtonGender>
+
+        <in.probusinsurance.probusdesign.UI.RadioButton.RadioButtonGender
+            style="@style/RadioButton_Gender_Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:layout_weight="1"
+            android:text="Female"></in.probusinsurance.probusdesign.UI.RadioButton.RadioButtonGender>
+    </RadioGroup>
+
+    <in.probusinsurance.probusdesign.UI.Chip.SingleChip
+        android:layout_width="wrap_content"
+        style="@style/Chip_Single_Style"
+        android:text="Jaipur"
+        android:layout_height="wrap_content"
+        ></in.probusinsurance.probusdesign.UI.Chip.SingleChip>
+
+    <in.probusinsurance.probusdesign.UI.Button.ButtonRound
+        android:id="@+id/btnround"
+        style="@style/Button_Round_Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        app:isactive="false"
+        ></in.probusinsurance.probusdesign.UI.Button.ButtonRound>
+
+
+</LinearLayout>

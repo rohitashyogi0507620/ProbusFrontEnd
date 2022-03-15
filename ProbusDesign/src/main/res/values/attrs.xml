@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="HeadingRegistrationLayout">
+        <attr name="headingtext" format="string" />
+        <attr name="subheadingtext" format="string" />
+    </declare-styleable>
+    <declare-styleable name="ButtonRound">
+        <attr name="isactive" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ButtonFlat">
+        <attr name="isactiveflatbutton" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="EditTextInput">
+        <attr name="showError" format="boolean" />
+        <attr name="errorMessage" format="string" />
+        <attr name="errorIcon" format="reference" />
+    </declare-styleable>
+
+</resources>

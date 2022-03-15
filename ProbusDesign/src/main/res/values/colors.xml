@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorOnPrimary">#252C63</color>
+    <color name="colorPrimary">#00B8CD</color>
+
+    <color name="colorSecondary">#f89a25</color>
+    <color name="colorOnSecondary">#f3fafb</color>
+
+    <color name="colorTheme">#FFFFFF</color>
+    <color name="colorButtonDisable">#EFEFEF</color>
+    <color name="colorButtonEnable">#00B8CD</color>
+
+
+    <color name="colorDesignArrow">@color/colorOnPrimary</color>
+    <color name="colorThemeBackground">#FFFFFF</color>
+    <color name="color_radio_button_border_unselected">#5E6C84</color>
+    <color name="radiobutton_textcolor">#253858</color>
+
+    <color name="text_Color_Heading_Large">#151F4C</color>
+    <color name="text_Color_Heading_Small">#252C63</color>
+    <color name="text_Color_SubHeading_Large">#253858</color>
+    <color name="text_Color_SubHeading_Small">#252C63</color>
+    <color name="text_Color_SubHeading_Light">#716C6B</color>
+
+    <color name="button_Color_Background_Inactive">#F2F3FF</color>
+    <color name="button_Color_Background_Active">@color/colorPrimary</color>
+    <color name="button_Color_TextInactive">#172B4D</color>
+    <color name="button_Color_TextActive">#FFFFFF</color>
+    <color name="switch_off_color">#D9DEEA</color>
+    <color name="text_Color_EditText">#172B4D</color>
+    <color name="hint_Color_EditText">#666B80</color>
+    <color name="color_inputlayout_selected">#00B8CD</color>
+    <color name="color_inputlayout_border">#666B80</color>
+    <color name="color_inputlayout_error">#F12424</color>
+
+
+</resources>

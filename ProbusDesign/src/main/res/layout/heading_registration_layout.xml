@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_heading"
+            style="@style/TextView_HeadingLarge_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:text="This is Heading">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_heading"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txt_subheading"
+                style="@style/TextView_SubHeadingSmall_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="this is subheading"></TextView>
+
+            <View
+                android:layout_width="@dimen/line_width"
+                android:layout_height="@dimen/line_height"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/background_round_design_arrow"></View>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

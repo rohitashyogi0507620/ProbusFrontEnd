@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/background_round_design_arrow.xml" value="0.1185" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/chip_stroke_color.xml" value="0.136" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/custom_thumb.xml" value="0.125" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/custom_track.xml" value="0.125" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/custom_trackh.xml" value="0.16" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/ic_back.xml" value="0.125" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/ic_password_missmatch.xml" value="0.1" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/radio_button_drawable.xml" value="0.133" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/radiobtn_selected.xml" value="0.136" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/radiobuttonUnselected.xml" value="0.14" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/radiobutton_background.xml" value="0.136" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/radiobutton_checkdrawable.xml" value="0.136" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/radiobutton_checkdrawable_24.xml" value="0.133" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/radiobutton_drawable.xml" value="0.136" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/radiobutton_insert.xml" value="0.133" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/radiobutton_uncheckdrawable.xml" value="0.133" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/radiobuttonselected.xml" value="0.136" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/radiobuttonunselected.xml" value="0.136" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/switchcustom_thumb.xml" value="0.1" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/switchcustom_track.xml" value="0.16" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/layout/activity_probusdesignmain.xml" value="0.25" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/layout/error_layout.xml" value="0.5" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/layout/heading_registration_layout.xml" value="0.18" />
+        <entry key="..\:/ProbusFrontEnd/app/src/main/res/layout/activity_main.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

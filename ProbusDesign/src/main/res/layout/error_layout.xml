@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/error_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/date_layout"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/error_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/margin_5dp"
+        android:src="@drawable/ic_password_missmatch"></ImageView>
+
+    <TextView
+        android:id="@+id/error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:paddingTop="@dimen/button_corner_8dp"
+        android:paddingBottom="@dimen/button_corner_8dp"
+        android:text="Incorrect email Id"
+        android:textColor="@color/color_inputlayout_error"
+        android:textSize="@dimen/text_Subheading_Small_Size"></TextView>
+
+</LinearLayout>

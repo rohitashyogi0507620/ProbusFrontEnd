@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="button_corner_8dp">8dp</dimen>
+    <dimen name="button_textsize_14sp">14sp</dimen>
+    <dimen name="button_padding_12dp">12dp</dimen>
+
+    //Text Size Headings
+    <dimen name="text_Heading_Large_Size">20sp</dimen>
+    <dimen name="text_Heading_Small_Size">16sp</dimen>
+    <dimen name="text_SubHeading_Large_Size">14sp</dimen>
+    <dimen name="text_Subheading_Small_Size">12sp</dimen>
+
+    <dimen name="chip_text_size">12sp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="line_width">21dp</dimen>
+    <dimen name="line_height">2dp</dimen>
+    <dimen name="arrowroundradious">10dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="border_1dp">1dp</dimen>
+    <dimen name="border_2dp">2dp</dimen>
+    <dimen name="chip_corner_40dp">40dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="margin_15dp">15dp</dimen>
+
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="radiobutton_text_size">16sp</dimen>
+    <dimen name="switch_button_thumbsize">26dp</dimen>
+    <dimen name="switch_button_tracksize">26dp</dimen>
+
+</resources>
