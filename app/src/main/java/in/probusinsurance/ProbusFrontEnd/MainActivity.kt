@@ -1,5 +1,6 @@
 package `in`.probusinsurance.ProbusFrontEnd
 
+import `in`.probusinsurance.ProbusFrontEnd.databinding.ActivityMainBinding
 import `in`.probusinsurance.probusdesign.ModelClass.MasterEntity
 import `in`.probusinsurance.probusdesign.ModelClass.SpinnerItemMasterEntryAdapter
 import `in`.probusinsurance.probusdesign.ProbusDesign
@@ -14,12 +15,14 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 
 class MainActivity : AppCompatActivity() {
 
+    lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         val btnstartmodule = findViewById<Button>(R.id.button_startmodule)
         val buttonRound = findViewById<ButtonRound>(R.id.btnround)
 
@@ -43,7 +46,12 @@ class MainActivity : AppCompatActivity() {
         list.add(MasterEntity("Post Graduation", "Post Graduation"))
         spinner.setSpinner(this, list)
 
-        val adapter = SpinnerItemMasterEntryAdapter(this, `in`.probusinsurance.probusdesign.R.layout.spinner_item, `in`.probusinsurance.probusdesign.R.id.item_text, list)
+        val adapter = SpinnerItemMasterEntryAdapter(
+            this,
+            `in`.probusinsurance.probusdesign.R.layout.spinner_item,
+            `in`.probusinsurance.probusdesign.R.id.item_text,
+            list
+        )
         autocomplete.setAdapter(adapter)
         autocomplete.setOnTouchListener(OnTouchListener { v, event ->
             if (MotionEvent.ACTION_UP == event.action) {
@@ -65,6 +73,11 @@ class MainActivity : AppCompatActivity() {
 //        textlayout.setErrorTextColor(R.color.radiobutton_textcolor)
 
         Toast.makeText(this, spinner.selectedItem.Name, Toast.LENGTH_SHORT).show()
+
+
+        binding.btnflat.setOnClickListener {
+            Toast.makeText(applicationContext, "Flat Button Clicked", Toast.LENGTH_SHORT).show()
+        }
 
     }
 

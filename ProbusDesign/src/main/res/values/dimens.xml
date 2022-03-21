@@ -19,6 +19,7 @@
     <dimen name="margin_10dp">10dp</dimen>
     <dimen name="border_1dp">1dp</dimen>
     <dimen name="border_2dp">2dp</dimen>
+    <dimen name="border_3dp">2dp</dimen>
     <dimen name="chip_corner_40dp">40dp</dimen>
     <dimen name="margin_5dp">5dp</dimen>
     <dimen name="margin_15dp">15dp</dimen>
