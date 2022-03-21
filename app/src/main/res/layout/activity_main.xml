@@ -3,10 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data >
-     <variable
-         name="data"
-         type="String" />
+    <data>
+
+        <variable
+            name="data"
+            type="String" />
     </data>
 
     <RelativeLayout
@@ -158,8 +159,13 @@
                     <in.probusinsurance.probusdesign.UI.Button.BackButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_back"
                         android:clickable="true"></in.probusinsurance.probusdesign.UI.Button.BackButton>
+
+                    <in.probusinsurance.probusdesign.UI.Button.ImagButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_back"
+                        android:clickable="true"></in.probusinsurance.probusdesign.UI.Button.ImagButton>
 
                     <in.probusinsurance.probusdesign.UI.Button.ButtonRound
                         android:id="@+id/btnround"
@@ -183,8 +189,8 @@
                         android:layout_height="wrap_content">
 
                         <in.probusinsurance.probusdesign.UI.AutoComplete.AutoComplete
-                            style="@style/EditText_Style_Normal"
                             android:id="@+id/autocomplete_text"
+                            style="@style/EditText_Style_Normal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="RTO City"></in.probusinsurance.probusdesign.UI.AutoComplete.AutoComplete>
