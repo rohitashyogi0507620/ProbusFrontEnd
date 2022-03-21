@@ -156,10 +156,10 @@
                         android:layout_height="wrap_content"></in.probusinsurance.probusdesign.UI.SwitchButton.SwitchButton>
 
 
-                    <in.probusinsurance.probusdesign.UI.Button.BackButton
+                    <in.probusinsurance.probusdesign.UI.Button.ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:clickable="true"></in.probusinsurance.probusdesign.UI.Button.BackButton>
+                        android:clickable="true"></in.probusinsurance.probusdesign.UI.Button.ImageButton>
 
                     <in.probusinsurance.probusdesign.UI.Button.ImagButton
                         android:layout_width="wrap_content"
