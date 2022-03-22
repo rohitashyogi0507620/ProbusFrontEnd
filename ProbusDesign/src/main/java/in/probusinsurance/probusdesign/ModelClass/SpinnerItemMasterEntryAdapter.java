@@ -43,10 +43,6 @@ public class SpinnerItemMasterEntryAdapter extends ArrayAdapter<MasterEntity> {
         return rowview;
     }
 
-    public void setError(View v, CharSequence s) {
-        TextView name = (TextView) v.findViewById(R.id.item_text);
-        name.setError(s);
-    }
 
 
 }

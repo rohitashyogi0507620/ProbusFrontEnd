@@ -55,5 +55,4 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
         return itemposition
     }
 
-
 }

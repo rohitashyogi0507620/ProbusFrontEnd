@@ -5,10 +5,10 @@ import android.content.Context
 import android.graphics.PorterDuff
 import android.util.AttributeSet
 
-class ImageButton(context: Context, attrs: AttributeSet?) :
+class BackButton(context: Context, attrs: AttributeSet?) :
     androidx.appcompat.widget.AppCompatImageView(context, attrs) {
     init {
-        //this.setImageDrawable(resources.getDrawable(R.drawable.ic_back))
+        this.setImageDrawable(resources.getDrawable(R.drawable.ic_back))
         this.isClickable = true
     }
 
