@@ -43,6 +43,7 @@ class MainActivity : AppCompatActivity() {
         list.add(MasterEntity("Post Graduation", "Post Graduation"))
         spinner.setSpinner(this, list)
 
+
         val adapter = SpinnerItemMasterEntryAdapter(this, `in`.probusinsurance.probusdesign.R.layout.spinner_item, `in`.probusinsurance.probusdesign.R.id.item_text, list)
         autocomplete.setAdapter(adapter)
         autocomplete.setOnTouchListener(OnTouchListener { v, event ->

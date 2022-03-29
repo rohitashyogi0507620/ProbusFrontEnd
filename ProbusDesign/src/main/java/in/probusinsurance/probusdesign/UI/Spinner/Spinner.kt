@@ -5,9 +5,11 @@ import `in`.probusinsurance.probusdesign.ModelClass.SpinnerItemMasterEntryAdapte
 import `in`.probusinsurance.probusdesign.R
 import android.app.Activity
 import android.content.Context
+import android.graphics.drawable.Drawable
 import android.util.AttributeSet
+import android.view.LayoutInflater
 import android.view.View
-import android.widget.AdapterView
+import android.widget.*
 import android.widget.Spinner
 
 class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widget.AppCompatSpinner(
@@ -18,12 +20,15 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
     var itemposition: Int
     var list_Item: List<MasterEntity>
 
+
     init {
 
         list_Item = arrayListOf()
         this.setBackgroundDrawable(resources.getDrawable(R.drawable.background_spinner))
         selectedItem = MasterEntity("", "")
         itemposition = 0;
+
+
     }
 
     fun setSpinner(context: Activity, list: List<MasterEntity>) {
@@ -54,5 +59,4 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
     fun getSpinnerPosition(): Int {
         return itemposition
     }
-
 }

@@ -44,5 +44,11 @@ public class SpinnerItemMasterEntryAdapter extends ArrayAdapter<MasterEntity> {
     }
 
 
+    public void setError(View v, CharSequence s) {
+        TextView name = (TextView) v.findViewById(R.id.item_text);
+        name.setTextColor(context.getResources().getColor(R.color.color_inputlayout_error));
+        name.setError(s);
+    }
+
 
 }
