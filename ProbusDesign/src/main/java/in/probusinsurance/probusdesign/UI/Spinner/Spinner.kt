@@ -5,12 +5,11 @@ import `in`.probusinsurance.probusdesign.ModelClass.SpinnerItemMasterEntryAdapte
 import `in`.probusinsurance.probusdesign.R
 import android.app.Activity
 import android.content.Context
-import android.graphics.drawable.Drawable
 import android.util.AttributeSet
-import android.view.LayoutInflater
 import android.view.View
-import android.widget.*
-import android.widget.Spinner
+import android.widget.AdapterView
+import android.widget.TextView
+
 
 class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widget.AppCompatSpinner(
     context!!, attrs
@@ -33,7 +32,8 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
 
     fun setSpinner(context: Activity, list: List<MasterEntity>) {
         list_Item = list
-        val spinner = SpinnerItemMasterEntryAdapter(context, R.layout.spinner_item, R.id.item_text, list)
+        val spinner =
+            SpinnerItemMasterEntryAdapter(context, R.layout.spinner_item, R.id.item_text, list)
         this.setAdapter(spinner)
         this.setOnItemSelectedListener(
             object : OnItemSelectedListener {
@@ -49,6 +49,14 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
 
                 override fun onNothingSelected(adapterView: AdapterView<*>?) {}
             })
+
+    }
+
+    fun setError(errormesage: String, errorcolor: Int) {
+        val errorText = this.getSelectedView() as TextView
+        errorText.error = ""
+        errorText.setTextColor(errorcolor) //just to highlight that this is an error
+        errorText.text = errormesage //c
 
     }
 

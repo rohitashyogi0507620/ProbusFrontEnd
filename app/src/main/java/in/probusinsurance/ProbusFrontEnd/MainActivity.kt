@@ -10,7 +10,6 @@ import android.os.Bundle
 import android.view.MotionEvent
 import android.view.View.OnTouchListener
 import android.widget.AdapterView.OnItemClickListener
-import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -30,21 +29,28 @@ class MainActivity : AppCompatActivity() {
                 buttonRound.setButtonIsactive(true)
             }
         }
-        btnstartmodule.setOnClickListener {
-            fun_startmodule()
-        }
-
         var spinner = findViewById<Spinner>(R.id.spinner)
         var autocomplete = findViewById<AutoComplete>(R.id.autocomplete_text)
         var list = arrayListOf<MasterEntity>()
+        list.add(MasterEntity("Select Education *", "Select Education *"))
         list.add(MasterEntity("12 th Pass", "12 th Pass"))
         list.add(MasterEntity("10 th Pass", "10 th Pass"))
         list.add(MasterEntity("Graduation", "Graduation"))
         list.add(MasterEntity("Post Graduation", "Post Graduation"))
         spinner.setSpinner(this, list)
 
+        btnstartmodule.setOnClickListener {
+            // fun_startmodule()
+            spinner.setError("Please Select Education*", R.color.colorButtonDisable)
+        }
 
-        val adapter = SpinnerItemMasterEntryAdapter(this, `in`.probusinsurance.probusdesign.R.layout.spinner_item, `in`.probusinsurance.probusdesign.R.id.item_text, list)
+
+        val adapter = SpinnerItemMasterEntryAdapter(
+            this,
+            `in`.probusinsurance.probusdesign.R.layout.spinner_item,
+            `in`.probusinsurance.probusdesign.R.id.item_text,
+            list
+        )
         autocomplete.setAdapter(adapter)
         autocomplete.setOnTouchListener(OnTouchListener { v, event ->
             if (MotionEvent.ACTION_UP == event.action) {
