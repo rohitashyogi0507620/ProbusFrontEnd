@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
 
         btnstartmodule.setOnClickListener {
             // fun_startmodule()
-            spinner.setError("Please Select Education*", R.color.colorButtonDisable)
+            spinner.setError("Please Select Education*")
         }
 
 

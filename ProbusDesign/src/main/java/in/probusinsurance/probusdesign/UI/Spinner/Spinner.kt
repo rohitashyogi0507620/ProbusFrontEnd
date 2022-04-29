@@ -52,10 +52,10 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
 
     }
 
-    fun setError(errormesage: String, errorcolor: Int) {
+    fun setError(errormesage: String) {
         val errorText = this.getSelectedView() as TextView
         errorText.error = ""
-        errorText.setTextColor(errorcolor) //just to highlight that this is an error
+        errorText.setTextColor(context.resources.getColor(R.color.color_inputlayout_error)) //just to highlight that this is an error
         errorText.text = errormesage //c
 
     }
