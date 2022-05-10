@@ -51,11 +51,10 @@
     </RadioGroup>
 
     <in.probusinsurance.probusdesign.UI.Chip.SingleChip
-        android:layout_width="wrap_content"
         style="@style/Chip_Single_Style"
-        android:text="Jaipur"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        ></in.probusinsurance.probusdesign.UI.Chip.SingleChip>
+        android:text="Jaipur"></in.probusinsurance.probusdesign.UI.Chip.SingleChip>
 
     <in.probusinsurance.probusdesign.UI.Button.ButtonRound
         android:id="@+id/btnround"
@@ -63,8 +62,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Continue"
-        app:isactive="false"
-        ></in.probusinsurance.probusdesign.UI.Button.ButtonRound>
+        app:isactive="false"></in.probusinsurance.probusdesign.UI.Button.ButtonRound>
 
 
 </LinearLayout>

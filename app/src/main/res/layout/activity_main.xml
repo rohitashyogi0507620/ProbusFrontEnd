@@ -152,6 +152,15 @@
                     android:layout_height="wrap_content"
                     android:clickable="true"></in.probusinsurance.probusdesign.UI.Button.BackButton>
 
+                <in.probusinsurance.probusdesign.UI.CheckBox.SingleCheckBox
+                    android:layout_width="match_parent"
+                    style="@style/CheckBox_Single_Style"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:text="Cover against 19 critical illnesses"
+                    android:layout_height="wrap_content">
+                </in.probusinsurance.probusdesign.UI.CheckBox.SingleCheckBox>
+
                 <in.probusinsurance.probusdesign.UI.Button.ButtonRound
                     android:id="@+id/btnround"
                     style="@style/Button_Round_Style"
@@ -203,6 +212,7 @@
                     android:layout_height="wrap_content">
 
                 </in.probusinsurance.probusdesign.UI.Spinner.Spinner>
+
 
 
             </LinearLayout>
