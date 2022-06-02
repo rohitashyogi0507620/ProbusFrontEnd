@@ -15,8 +15,8 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
     context!!, attrs
 ) {
 
-    var selectedItem: MasterEntity
-    var itemposition: Int
+    lateinit var selectedItem: MasterEntity
+     var itemposition: Int
     var list_Item: List<MasterEntity>
 
 
@@ -24,17 +24,8 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
 
         list_Item = arrayListOf()
         this.setBackgroundDrawable(resources.getDrawable(R.drawable.background_spinner))
-        selectedItem = MasterEntity("", "")
-        itemposition = 0;
-
-
-    }
-
-    fun setSpinner(context: Activity, list: List<MasterEntity>) {
-        list_Item = list
-        val spinner =
-            SpinnerItemMasterEntryAdapter(context, R.layout.spinner_item, R.id.item_text, list)
-        this.setAdapter(spinner)
+         selectedItem = MasterEntity("", "")
+         itemposition = 0;
         this.setOnItemSelectedListener(
             object : OnItemSelectedListener {
                 override fun onItemSelected(
@@ -49,6 +40,14 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
 
                 override fun onNothingSelected(adapterView: AdapterView<*>?) {}
             })
+
+
+    }
+
+    fun setSpinner(context: Activity, list: List<MasterEntity>) {
+        list_Item = list
+        val spinner = SpinnerItemMasterEntryAdapter(context, R.layout.spinner_item, R.id.item_text, list)
+        this.setAdapter(spinner)
 
     }
 

@@ -146,6 +146,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"></in.probusinsurance.probusdesign.UI.SwitchButton.SwitchButton>
 
+                <in.probusinsurance.probusdesign.UI.EditText.EditTextInput
+                    style="@style/EditText_Style_Outline"
+                    android:id="@+id/il_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <in.probusinsurance.probusdesign.UI.EditText.EmailEditText
+                        android:id="@+id/et_txt"
+                        style="@style/EditText_Style_Normal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Email"></in.probusinsurance.probusdesign.UI.EditText.EmailEditText>
+                </in.probusinsurance.probusdesign.UI.EditText.EditTextInput>
+
+
 
                 <in.probusinsurance.probusdesign.UI.Button.BackButton
                     android:layout_width="wrap_content"
@@ -153,17 +168,22 @@
                     android:clickable="true"></in.probusinsurance.probusdesign.UI.Button.BackButton>
 
                 <in.probusinsurance.probusdesign.UI.CheckBox.SingleCheckBox
-                    android:layout_width="match_parent"
                     style="@style/CheckBox_Single_Style"
-                    android:text="Cover against 19 critical illnesses"
-                    android:layout_height="wrap_content">
-                </in.probusinsurance.probusdesign.UI.CheckBox.SingleCheckBox>
- <in.probusinsurance.probusdesign.UI.CheckBox.SingleCheckBox
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cover against 19 critical illnesses"></in.probusinsurance.probusdesign.UI.CheckBox.SingleCheckBox>
+
+                <in.probusinsurance.probusdesign.UI.CheckBox.SingleCheckBox
                     style="@style/CheckBox_Single_Style"
-                    android:text="Cover against 19 critical illnesses"
-                    android:layout_height="wrap_content">
-                </in.probusinsurance.probusdesign.UI.CheckBox.SingleCheckBox>
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cover against 19 critical illnesses"></in.probusinsurance.probusdesign.UI.CheckBox.SingleCheckBox>
+
+                <LinearLayout
+                    android:id="@+id/ll_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></LinearLayout>
 
                 <in.probusinsurance.probusdesign.UI.Button.ButtonRound
                     android:id="@+id/btnround"
@@ -181,18 +201,18 @@
                     android:text="Download Brochure"
                     app:icon="@drawable/ic_password_missmatch"></in.probusinsurance.probusdesign.UI.Button.ButtonOutline>
 
-                <in.probusinsurance.probusdesign.UI.EditText.EditTextInput
+                 <in.probusinsurance.probusdesign.UI.EditText.EditTextInput
                     style="@style/EditText_Style_Outline"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <in.probusinsurance.probusdesign.UI.AutoComplete.AutoComplete
-                        android:id="@+id/autocomplete_text"
-                        style="@style/EditText_Style_Normal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="RTO City"></in.probusinsurance.probusdesign.UI.AutoComplete.AutoComplete>
-                </in.probusinsurance.probusdesign.UI.EditText.EditTextInput>
+                     <in.probusinsurance.probusdesign.UI.AutoComplete.AutoComplete
+                         android:id="@+id/autocomplete_text"
+                         style="@style/EditText_Style_Normal"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:hint="RTO City"></in.probusinsurance.probusdesign.UI.AutoComplete.AutoComplete>
+                 </in.probusinsurance.probusdesign.UI.EditText.EditTextInput>
 
 
                 <in.probusinsurance.probusdesign.UI.EditText.EditTextInput
@@ -216,7 +236,6 @@
                     android:layout_height="wrap_content">
 
                 </in.probusinsurance.probusdesign.UI.Spinner.Spinner>
-
 
 
             </LinearLayout>

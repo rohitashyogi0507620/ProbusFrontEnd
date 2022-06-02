@@ -1,0 +1,7 @@
+<in.probusinsurance.probusdesign.UI.CheckBox.SingleCheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CheckBox_Single_Style"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:checked="false"
+    android:text="Hello Text "/>
+
