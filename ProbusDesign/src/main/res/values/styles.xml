@@ -165,7 +165,6 @@
         <item name="android:textColor">@color/text_Color_EditText</item>
         <item name="android:fontFamily">@font/montserrat_regular</item>
         <item name="android:textSize">@dimen/editext_txt_size</item>
-        <item name="android:completionThreshold">1</item>
     </style>
 
     <style name="EditText_Style_Outline" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">

@@ -8,16 +8,23 @@ import android.content.Context
 import android.util.AttributeSet
 import android.view.View
 import android.widget.AdapterView
-import android.widget.ArrayAdapter
 import android.widget.TextView
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 
 
 class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widget.AppCompatSpinner(
     context!!, attrs
 ) {
 
-     var selectedItem: MasterEntity
-    var itemposition: Int
+    private var _selectedItem = MutableLiveData<MasterEntity>()
+    val selectedItem: LiveData<MasterEntity>
+        get() = _selectedItem
+
+    private var _itemposition = MutableLiveData<Int>()
+    val itemposition: LiveData<Int>
+        get() = _itemposition
+
     var list_Item: List<MasterEntity>
 
 
@@ -25,8 +32,6 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
 
         list_Item = arrayListOf()
         this.setBackgroundDrawable(resources.getDrawable(R.drawable.background_spinner))
-        selectedItem = MasterEntity("", "")
-        itemposition = 0;
         this.setOnItemSelectedListener(
             object : OnItemSelectedListener {
                 override fun onItemSelected(
@@ -35,8 +40,8 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
                     i: Int,
                     l: Long
                 ) {
-                    selectedItem = list_Item.get(i)
-                    itemposition = i
+                    _selectedItem.postValue(list_Item.get(i))
+                    _itemposition.postValue(i)
                 }
 
                 override fun onNothingSelected(adapterView: AdapterView<*>?) {}
@@ -47,15 +52,14 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
 
     fun setSpinner(context: Activity, list: List<MasterEntity>) {
         list_Item = list
-        val spinner =
-            SpinnerItemMasterEntryAdapter(context, R.layout.spinner_item, R.id.item_text, list)
+        val spinner = SpinnerItemMasterEntryAdapter(context, R.layout.spinner_item, R.id.item_text, list)
         this.setAdapter(spinner)
 
     }
 
     fun setSpinner(context: Activity, listId: Array<String>) {
 
-        var listitem= mutableListOf<MasterEntity>()
+        var listitem = mutableListOf<MasterEntity>()
         for (i in listId.indices) {
             listitem.add(MasterEntity(listId[i], listId[i]))
         }
@@ -69,7 +73,7 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
 
     fun setSpinner(context: Activity, listId: Array<String>, listname: Array<String>) {
 
-        var listitem= mutableListOf<MasterEntity>()
+        var listitem = mutableListOf<MasterEntity>()
         for (i in listId.indices) {
             listitem.add(MasterEntity(listId[i], listname[i]))
         }
@@ -79,22 +83,6 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
         this.setAdapter(spinner)
     }
 
-    fun setError(errormesage: String) {
-
-        val errorText = this.getSelectedView() as TextView
-        errorText.error = ""
-        errorText.setTextColor(context.resources.getColor(R.color.color_inputlayout_error)) //just to highlight that this is an error
-        errorText.text = errormesage //c
-
-    }
-
-    fun getSpinnerSelectedItem(): MasterEntity {
-        return selectedItem
-    }
-
-    fun getSpinnerPosition(): Int {
-        return itemposition
-    }
 
     fun autoFillById(id: String) {
 
@@ -132,4 +120,22 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
             }
         }
     }
+
+    fun setError(errormesage: String) {
+
+        val errorText = this.getSelectedView() as TextView
+        errorText.error = ""
+        errorText.setTextColor(context.resources.getColor(R.color.color_inputlayout_error)) //just to highlight that this is an error
+        errorText.text = errormesage
+
+    }
+
+    fun getSpinnerSelectedItem(): MasterEntity {
+        return _selectedItem.value!!
+    }
+
+    fun getSpinnerPosition(): Int {
+        return _itemposition.value!!
+    }
+
 }

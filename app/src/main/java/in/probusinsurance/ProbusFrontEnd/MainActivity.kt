@@ -6,10 +6,12 @@ import `in`.probusinsurance.probusdesign.UI.AutoComplete.AutoComplete
 import `in`.probusinsurance.probusdesign.UI.Button.ButtonRound
 import `in`.probusinsurance.probusdesign.UI.EditText.EditTextInput
 import `in`.probusinsurance.probusdesign.UI.Spinner.Spinner
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
 
 
 class MainActivity : AppCompatActivity() {
@@ -48,6 +50,7 @@ class MainActivity : AppCompatActivity() {
             ll_checkbox.addView(mChip, params)
         }
 
+        //Spinner Work
         var spinner = findViewById<Spinner>(R.id.spinner)
         var list = arrayListOf<MasterEntity>()
         list.add(MasterEntity("Select Education *", "Select Education *"))
@@ -60,12 +63,21 @@ class MainActivity : AppCompatActivity() {
         // spinner.autoFillById("10")
         // spinner.autoFillByMaster(MasterEntity("18 ", "Post Graduation"))
 
+        spinner.selectedItem.observe(this, Observer {
+            Toast.makeText(
+                applicationContext,
+                it.Name + " : " + it.Id,
+                Toast.LENGTH_SHORT
+            ).show()
+        })
         spinner.setSpinner(
             this,
             resources.getStringArray(`in`.probusinsurance.probusdesign.R.array.Idarray_yesno),
             resources.getStringArray(`in`.probusinsurance.probusdesign.R.array.array_yesno)
         )
 
+
+        // Auto Complete Work
         var autocomplete = findViewById<AutoComplete>(R.id.autocomplete_text)
         //autocomplete.setAutoComplete(this, list)
         autocomplete.setAutoComplete(
@@ -109,27 +121,16 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-//        val adapter = SpinnerItemMasterEntryAdapter(
-//            this,
-//            `in`.probusinsurance.probusdesign.R.layout.spinner_item,
-//            `in`.probusinsurance.probusdesign.R.id.item_text,
-//            list
-//        )
-//        autocomplete.setAdapter(adapter)
-//        autocomplete.setOnTouchListener(OnTouchListener { v, event ->
-//            if (MotionEvent.ACTION_UP == event.action) {
-//                autocomplete.showDropDown()
-//            }
-//            false
-//        })
-
-
 //        var textlayout=findViewById<EditTextInput>(R.id.editext_inputlayout)
 //        textlayout.setErrorLayout(true,"Please enter valid email id",resources.getDrawable(`in`.probusinsurance.probusdesign.R.drawable.ic_password_missmatch))
 //        textlayout.setErrorText("Chal n apna kam kr na")
 //        textlayout.setErrorTextColor(R.color.radiobutton_textcolor)
 
-        Toast.makeText(this, spinner.selectedItem.Name, Toast.LENGTH_SHORT).show()
+//        binding.ilTxt.setErrorLayout(
+//            true,
+//            "Enter Email",
+//            resources.getDrawable(`in`.probusinsurance.probusdesign.R.drawable.ic_password_missmatch)
+//        )
 
     }
 
