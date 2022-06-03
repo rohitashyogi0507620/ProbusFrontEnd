@@ -9,13 +9,20 @@ import android.view.MotionEvent
 import android.view.View.OnTouchListener
 import android.widget.AdapterView.OnItemClickListener
 import android.widget.ArrayAdapter
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 
 
 class AutoComplete(context: Context, attrs: AttributeSet?) :
     androidx.appcompat.widget.AppCompatAutoCompleteTextView(context, attrs) {
 
-    var selectedItem: MasterEntity
-    var itemposition: Int
+    private var _selectedItem = MutableLiveData<MasterEntity>()
+    val selectedItem: LiveData<MasterEntity>
+        get() = _selectedItem
+    private var _itemposition = MutableLiveData<Int>()
+    val itemposition: LiveData<Int>
+        get() = _itemposition
+
     var list_Item: List<MasterEntity>
 
     init {
@@ -29,8 +36,12 @@ class AutoComplete(context: Context, attrs: AttributeSet?) :
             }
             false
         })
-        selectedItem = MasterEntity("", "")
-        itemposition = 0;
+        this.setOnItemClickListener(OnItemClickListener { adapterView, view, i, l ->
+            _selectedItem.postValue(adapterView.adapter.getItem(i) as MasterEntity)
+            _itemposition.postValue(i)
+        })
+
+
     }
 
     fun setAutoComplete(context: Activity, list: List<MasterEntity>) {
@@ -42,16 +53,12 @@ class AutoComplete(context: Context, attrs: AttributeSet?) :
                 list_Item
             )
         )
-        this.setOnItemClickListener(OnItemClickListener { adapterView, view, i, l ->
-            selectedItem = adapterView.adapter.getItem(i) as MasterEntity
-            itemposition = i
-        })
 
     }
 
     fun setAutoComplete(context: Activity, listId: Array<String>) {
 
-        var listitem= mutableListOf<MasterEntity>()
+        var listitem = mutableListOf<MasterEntity>()
         for (i in listId.indices) {
             listitem.add(MasterEntity(listId[i], listId[i]))
         }
@@ -64,16 +71,13 @@ class AutoComplete(context: Context, attrs: AttributeSet?) :
                 list_Item
             )
         )
-        this.setOnItemClickListener(OnItemClickListener { adapterView, view, i, l ->
-            selectedItem = adapterView.adapter.getItem(i) as MasterEntity
-            itemposition = i
-        })
+
 
     }
 
     fun setAutoComplete(context: Activity, listId: Array<String>, listname: Array<String>) {
 
-        var listitem= mutableListOf<MasterEntity>()
+        var listitem = mutableListOf<MasterEntity>()
         for (i in listId.indices) {
             listitem.add(MasterEntity(listId[i], listname[i]))
         }
@@ -86,27 +90,16 @@ class AutoComplete(context: Context, attrs: AttributeSet?) :
                 list_Item
             )
         )
-        this.setOnItemClickListener(OnItemClickListener { adapterView, view, i, l ->
-            selectedItem = adapterView.adapter.getItem(i) as MasterEntity
-            itemposition = i
-        })
 
     }
 
-    fun getAutoCompleteSelectedItem(): MasterEntity {
-        return selectedItem
-    }
-
-    fun getAutoCompletePosition(): Int {
-        return itemposition
-    }
 
     fun autoFillById(id: String) {
 
         if (list_Item != null) {
             for (i in list_Item.indices) {
                 if (list_Item.get(i).Id.equals(id)) {
-                    selectedItem = list_Item.get(i)
+                    _selectedItem.value = list_Item.get(i)
                     this.setText(list_Item.get(i).Name)
                     break;
                 }
@@ -119,7 +112,7 @@ class AutoComplete(context: Context, attrs: AttributeSet?) :
         if (list_Item != null) {
             for (i in list_Item.indices) {
                 if (list_Item.get(i).Name.equals(name)) {
-                    selectedItem = list_Item.get(i)
+                    _selectedItem.value = list_Item.get(i)
                     this.setText(list_Item.get(i).Name)
                     break;
                 }
@@ -133,12 +126,20 @@ class AutoComplete(context: Context, attrs: AttributeSet?) :
                 if (list_Item.get(i).Id.equals(item.Id) &&
                     list_Item.get(i).Name.equals(item.Name)
                 ) {
-                    selectedItem = list_Item.get(i)
+                    _selectedItem.value = list_Item.get(i)
                     this.setText(list_Item.get(i).Name)
                     break;
                 }
             }
         }
+    }
+
+    fun getAutoCompleteSelectedItem(): MasterEntity {
+        return _selectedItem.value!!
+    }
+
+    fun getAutoCompletePosition(): Int {
+        return _itemposition.value!!
     }
 }
 
