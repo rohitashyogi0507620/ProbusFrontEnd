@@ -1,6 +1,6 @@
 package `in`.probusinsurance.probusdesign.UI.Spinner
 
-import `in`.probusinsurance.probusdesign.ModelClass.MasterEntity
+import `in`.probusinsurance.probusdesign.MasterEntity
 import `in`.probusinsurance.probusdesign.ModelClass.SpinnerItemMasterEntryAdapter
 import `in`.probusinsurance.probusdesign.R
 import android.app.Activity
@@ -8,6 +8,7 @@ import android.content.Context
 import android.util.AttributeSet
 import android.view.View
 import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import android.widget.TextView
 
 
@@ -15,8 +16,8 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
     context!!, attrs
 ) {
 
-    lateinit var selectedItem: MasterEntity
-     var itemposition: Int
+     var selectedItem: MasterEntity
+    var itemposition: Int
     var list_Item: List<MasterEntity>
 
 
@@ -24,8 +25,8 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
 
         list_Item = arrayListOf()
         this.setBackgroundDrawable(resources.getDrawable(R.drawable.background_spinner))
-         selectedItem = MasterEntity("", "")
-         itemposition = 0;
+        selectedItem = MasterEntity("", "")
+        itemposition = 0;
         this.setOnItemSelectedListener(
             object : OnItemSelectedListener {
                 override fun onItemSelected(
@@ -46,9 +47,36 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
 
     fun setSpinner(context: Activity, list: List<MasterEntity>) {
         list_Item = list
-        val spinner = SpinnerItemMasterEntryAdapter(context, R.layout.spinner_item, R.id.item_text, list)
+        val spinner =
+            SpinnerItemMasterEntryAdapter(context, R.layout.spinner_item, R.id.item_text, list)
         this.setAdapter(spinner)
 
+    }
+
+    fun setSpinner(context: Activity, listId: Array<String>) {
+
+        var listitem= mutableListOf<MasterEntity>()
+        for (i in listId.indices) {
+            listitem.add(MasterEntity(listId[i], listId[i]))
+        }
+
+        list_Item = listitem
+        val spinner =
+            SpinnerItemMasterEntryAdapter(context, R.layout.spinner_item, R.id.item_text, list_Item)
+        this.setAdapter(spinner)
+
+    }
+
+    fun setSpinner(context: Activity, listId: Array<String>, listname: Array<String>) {
+
+        var listitem= mutableListOf<MasterEntity>()
+        for (i in listId.indices) {
+            listitem.add(MasterEntity(listId[i], listname[i]))
+        }
+        list_Item = listitem
+        val spinner =
+            SpinnerItemMasterEntryAdapter(context, R.layout.spinner_item, R.id.item_text, list_Item)
+        this.setAdapter(spinner)
     }
 
     fun setError(errormesage: String) {
@@ -66,5 +94,42 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
 
     fun getSpinnerPosition(): Int {
         return itemposition
+    }
+
+    fun autoFillById(id: String) {
+
+        if (list_Item != null) {
+            for (i in list_Item.indices) {
+                if (list_Item.get(i).Id.equals(id)) {
+                    this.setSelection(i);
+                    break;
+                }
+            }
+        }
+    }
+
+    fun autoFillByName(name: String) {
+
+        if (list_Item != null) {
+            for (i in list_Item.indices) {
+                if (list_Item.get(i).Name.equals(name)) {
+                    this.setSelection(i);
+                    break;
+                }
+            }
+        }
+    }
+
+    fun autoFillByMaster(item: MasterEntity) {
+        if (list_Item != null) {
+            for (i in list_Item.indices) {
+                if (list_Item.get(i).Id.equals(item.Id) &&
+                    list_Item.get(i).Name.equals(item.Name)
+                ) {
+                    this.setSelection(i);
+                    break;
+                }
+            }
+        }
     }
 }

@@ -1,6 +1,6 @@
 package `in`.probusinsurance.ProbusFrontEnd
 
-import `in`.probusinsurance.probusdesign.ModelClass.MasterEntity
+import `in`.probusinsurance.probusdesign.MasterEntity
 import `in`.probusinsurance.probusdesign.ProbusDesign
 import `in`.probusinsurance.probusdesign.UI.AutoComplete.AutoComplete
 import `in`.probusinsurance.probusdesign.UI.Button.ButtonRound
@@ -55,25 +55,44 @@ class MainActivity : AppCompatActivity() {
         list.add(MasterEntity("10", "10 th Pass"))
         list.add(MasterEntity("15", "Graduation"))
         list.add(MasterEntity("18 ", "Post Graduation"))
-        spinner.setSpinner(this, list)
+        // spinner.setSpinner(this, list)
+        // spinner.autoFillByName("Graduation")
+        // spinner.autoFillById("10")
+        // spinner.autoFillByMaster(MasterEntity("18 ", "Post Graduation"))
+
+        spinner.setSpinner(
+            this,
+            resources.getStringArray(`in`.probusinsurance.probusdesign.R.array.Idarray_yesno),
+            resources.getStringArray(`in`.probusinsurance.probusdesign.R.array.array_yesno)
+        )
 
         var autocomplete = findViewById<AutoComplete>(R.id.autocomplete_text)
-        autocomplete.setAutoComplete(this, list)
-
+        //autocomplete.setAutoComplete(this, list)
+        autocomplete.setAutoComplete(
+            this,
+            resources.getStringArray(`in`.probusinsurance.probusdesign.R.array.Idarray_yesno),
+            resources.getStringArray(`in`.probusinsurance.probusdesign.R.array.array_yesno)
+        )
+        // autocomplete.autoFillByName("Graduation")
+        // autocomplete.autoFillById("10")
+        // autocomplete.autoFillByMaster(MasterEntity("18 ", "Post Graduation"))
 
         buttonRound.setOnClickListener {
 
             selected = autocomplete.getAutoCompleteSelectedItem()
             selectedSpinner = spinner.getSpinnerSelectedItem()
+            // spinner.setError("Nhi Bhai ")
 
-            Toast.makeText(applicationContext,
-            selected.Name+" : "+selected.Id,
-            Toast.LENGTH_SHORT
+            Toast.makeText(
+                applicationContext,
+                selected.Name + " : " + selected.Id,
+                Toast.LENGTH_SHORT
             ).show()
 
-            Toast.makeText(applicationContext,
-                selectedSpinner.Name+" : "+selectedSpinner.Id,
-            Toast.LENGTH_SHORT
+            Toast.makeText(
+                applicationContext,
+                "Position :" + spinner.getSpinnerPosition() + " ," + selectedSpinner.Name + " : " + selectedSpinner.Id,
+                Toast.LENGTH_SHORT
             ).show()
 
 //            if (buttonRound.isactive) {

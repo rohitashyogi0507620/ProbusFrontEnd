@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import in.probusinsurance.probusdesign.MasterEntity;
 import in.probusinsurance.probusdesign.R;
 
 
