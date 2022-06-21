@@ -144,6 +144,20 @@
         <item name="android:layout_marginBottom">@dimen/margin_15dp</item>
     </style>
 
+    <style name="CheckBox_Single_Style_No_Margin" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:background">@drawable/radiobutton_background</item>
+        <item name="buttonTint">@color/radiobutton_color</item>
+        <item name="android:textColor">@color/radiobutton_textcolor</item>
+        <item name="android:button">@drawable/check_button_insert</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:textSize">@dimen/radiobutton_text_size</item>
+        <item name="android:paddingEnd">@dimen/margin_10dp</item>
+        <item name="android:paddingStart">@dimen/margin_10dp</item>
+        <item name="android:paddingTop">@dimen/margin_15dp</item>
+        <item name="android:paddingBottom">@dimen/margin_15dp</item>
+
+    </style>
+
 
 
     <style name="SwitchButton_Style">
