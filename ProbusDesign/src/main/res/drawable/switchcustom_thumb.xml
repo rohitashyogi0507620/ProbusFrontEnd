@@ -6,7 +6,7 @@
             <solid android:color="@color/white"/>
             <size android:width="@dimen/switch_button_thumbsize"
                 android:height="@dimen/switch_button_thumbsize"/>
-            <stroke android:width="@dimen/border_1dp"
+            <stroke android:width="@dimen/border_2dp"
                 android:color="@color/switch_off_color"/>
         </shape>
     </item>
@@ -15,7 +15,7 @@
             <solid android:color="@color/white"/>
             <size android:width="@dimen/switch_button_thumbsize"
                 android:height="@dimen/switch_button_thumbsize"/>
-            <stroke android:width="@dimen/border_1dp"
+            <stroke android:width="@dimen/border_2dp"
                 android:color="@color/colorPrimary"/>
         </shape>
     </item>

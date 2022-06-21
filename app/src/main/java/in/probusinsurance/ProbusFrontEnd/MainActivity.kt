@@ -33,8 +33,7 @@ class MainActivity : AppCompatActivity() {
         additionalcoverlist.add("Waiver of Premium")
         additionalcoverlist.add("Cover for spouse")
         for (checkbox in additionalcoverlist) {
-            var mChip =
-                this.layoutInflater.inflate(R.layout.layout_item_checkbox, null, false) as CheckBox
+            var mChip = this.layoutInflater.inflate(R.layout.layout_item_checkbox, null, false) as CheckBox
             mChip.text = checkbox
             mChip.id = View.generateViewId()
             //mChip.setOnClickListener(this)
@@ -43,11 +42,11 @@ class MainActivity : AppCompatActivity() {
                 RelativeLayout.LayoutParams.WRAP_CONTENT
             )
 
-            params.leftMargin = 20
-            params.rightMargin = 20
-            params.topMargin = 10
-            params.bottomMargin = 10
-            ll_checkbox.addView(mChip, params)
+            params.leftMargin = 15
+            params.rightMargin = 15
+            params.topMargin = 0
+            params.bottomMargin = 15
+            ll_checkbox.addView(mChip)
         }
 
         //Spinner Work

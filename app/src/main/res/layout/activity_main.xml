@@ -145,6 +145,7 @@
                 <in.probusinsurance.probusdesign.UI.SwitchButton.SwitchButton
                     style="@style/SwitchButton_Style"
                     android:layout_width="wrap_content"
+                    android:checked="true"
                     android:layout_height="wrap_content"></in.probusinsurance.probusdesign.UI.SwitchButton.SwitchButton>
                 <in.probusinsurance.probusdesign.UI.EditText.EditTextInput
                     android:id="@+id/il_txt"
