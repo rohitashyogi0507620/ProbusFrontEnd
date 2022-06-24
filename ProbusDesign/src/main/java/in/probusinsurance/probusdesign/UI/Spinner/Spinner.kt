@@ -65,8 +65,7 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
         }
 
         list_Item = listitem
-        val spinner =
-            SpinnerItemMasterEntryAdapter(context, R.layout.spinner_item, R.id.item_text, list_Item)
+        val spinner = SpinnerItemMasterEntryAdapter(context, R.layout.spinner_item, R.id.item_text, list_Item)
         this.setAdapter(spinner)
 
     }

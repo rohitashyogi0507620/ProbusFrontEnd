@@ -45,6 +45,20 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 }
 
+android {
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+
+        multipleVariants {
+            withSourcesJar()
+            withJavadocJar()
+            allVariants()
+        }
+    }
+}
 afterEvaluate {
     publishing {
         publications {
@@ -56,4 +70,6 @@ afterEvaluate {
             }
         }
     }
+
+
 }

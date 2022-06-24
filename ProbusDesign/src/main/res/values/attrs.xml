@@ -6,9 +6,29 @@
         <attr name="headingtext" format="string" />
         <attr name="subheadingtext" format="string" />
     </declare-styleable>
+
+    <declare-styleable name="HeadingWithFixChipLayout">
+        <attr name="title" format="string" />
+        <attr name="subtitle" format="string" />
+        <attr name="ischecked" format="boolean" />
+        <attr name="isCustomChip" format="boolean" />
+        <attr name="chip1Text"  format="string"/>
+        <attr name="chip2Text"  format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="HeadingWithCustomChipLayout">
+        <attr name="headingtitle" format="string" />
+        <attr name="subheadingtitle" format="string" />
+    </declare-styleable>
+
+    <attr name="my_enum_attr">
+        <enum name="value1" value="1" />
+    </attr>
+
     <declare-styleable name="ButtonRound">
         <attr name="isactive" format="boolean" />
     </declare-styleable>
+
     <declare-styleable name="ButtonFlat">
         <attr name="isactiveflatbutton" format="boolean" />
     </declare-styleable>
@@ -18,7 +38,6 @@
         <attr name="errorMessage" format="string" />
         <attr name="errorIcon" format="reference" />
     </declare-styleable>
-
 
 
 </resources>

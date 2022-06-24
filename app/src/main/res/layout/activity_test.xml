@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TestActivity">
+
+
+    <in.probusinsurance.probusdesign.UI.HeadingRegistrationLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:headingtext="Hello"
+        app:subheadingtext="Please add">
+
+    </in.probusinsurance.probusdesign.UI.HeadingRegistrationLayout>
+
+    <in.probusinsurance.probusdesign.UI.HeadingWithFixChipLayout
+        android:id="@+id/layout_yesno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ischecked="true"
+        app:subtitle="Select yes if you want to get whatsapp message"
+        app:title="Allow to Send Text Message"></in.probusinsurance.probusdesign.UI.HeadingWithFixChipLayout>
+
+    <in.probusinsurance.probusdesign.UI.HeadingWithFixChipLayout
+        android:id="@+id/whatsapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ischecked="false"
+        app:isCustomChip="true"
+        app:chip1Text="Ha Bheg na"
+        app:chip2Text="Nhi Be pagal hai kya"
+        app:subtitle="Select yes if you want to get whatsapp message"
+        app:title="Send sms to whatsapp"></in.probusinsurance.probusdesign.UI.HeadingWithFixChipLayout>
+
+    <in.probusinsurance.probusdesign.UI.HeadingWithCustomChipLayout
+        android:id="@+id/layout_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:subheadingtitle="Select city from list"
+        app:headingtitle="Please select city from above list"
+        >
+
+    </in.probusinsurance.probusdesign.UI.HeadingWithCustomChipLayout>
+
+    <com.mukesh.mukeshotpview.mukeshOtpView.MukeshOtpView
+        android:id="@+id/simpleOtpView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:inputType="number"
+        android:text="124356"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:hideLineWhenFilled="false"
+        app:itemCount="6"
+        app:lineColor="@android:color/holo_green_dark"
+        app:state_filled="true"
+        app:viewType="line" />
+
+</LinearLayout>

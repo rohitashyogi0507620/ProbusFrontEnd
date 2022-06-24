@@ -1,0 +1,7 @@
+<in.probusinsurance.probusdesign.UI.Chip.SingleChip xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Chip_Single_Style"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textAppearance="@style/Chip_Single_Style"
+    android:hint="Text" />

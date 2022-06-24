@@ -33,7 +33,8 @@ class MainActivity : AppCompatActivity() {
         additionalcoverlist.add("Waiver of Premium")
         additionalcoverlist.add("Cover for spouse")
         for (checkbox in additionalcoverlist) {
-            var mChip = this.layoutInflater.inflate(R.layout.layout_item_checkbox, null, false) as CheckBox
+            var mChip =
+                this.layoutInflater.inflate(R.layout.layout_item_checkbox, null, false) as CheckBox
             mChip.text = checkbox
             mChip.id = View.generateViewId()
             //mChip.setOnClickListener(this)
@@ -90,21 +91,22 @@ class MainActivity : AppCompatActivity() {
 
         buttonRound.setOnClickListener {
 
-            selected = autocomplete.getAutoCompleteSelectedItem()
-            selectedSpinner = spinner.getSpinnerSelectedItem()
-            // spinner.setError("Nhi Bhai ")
-
-            Toast.makeText(
-                applicationContext,
-                selected.Name + " : " + selected.Id,
-                Toast.LENGTH_SHORT
-            ).show()
-
-            Toast.makeText(
-                applicationContext,
-                "Position :" + spinner.getSpinnerPosition() + " ," + selectedSpinner.Name + " : " + selectedSpinner.Id,
-                Toast.LENGTH_SHORT
-            ).show()
+//            selected = autocomplete.getAutoCompleteSelectedItem()
+//            selectedSpinner = spinner.getSpinnerSelectedItem()
+//            // spinner.setError("Nhi Bhai ")
+//
+//            Toast.makeText(
+//                applicationContext,
+//                selected.Name + " : " + selected.Id,
+//                Toast.LENGTH_SHORT
+//            ).show()
+//
+//            Toast.makeText(
+//                applicationContext,
+//                "Position :" + spinner.getSpinnerPosition() + " ," + selectedSpinner.Name + " : " + selectedSpinner.Id,
+//                Toast.LENGTH_SHORT
+//            ).show()
+            startActivity(Intent(applicationContext, TestActivity::class.java))
 
 //            if (buttonRound.isactive) {
 //                buttonRound.setButtonIsactive(false)
