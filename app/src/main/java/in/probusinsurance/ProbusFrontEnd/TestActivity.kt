@@ -23,6 +23,7 @@ class TestActivity : AppCompatActivity() {
             ).show()
         })
 
+
         whatsapp.ischecked.observe(this, Observer {
             Toast.makeText(
                 applicationContext,
