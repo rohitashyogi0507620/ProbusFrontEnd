@@ -60,7 +60,7 @@ class TestActivity : AppCompatActivity() {
         var parentlayout = findViewById<RelativeLayout>(R.id.relative_layout)
 
         var progessLayout = findViewById<ProgessLayout>(R.id.layout_progess)
-         progessLayout.setEnableControls(true, progessLayout)
+         progessLayout.setEnableControls(false, progessLayout)
 
         // progessLayout.enableControl(true, parentlayout)
         //  progessLayout.setanimationFile(R.raw.progess_2)
