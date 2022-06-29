@@ -27,5 +27,8 @@
     <dimen name="radiobutton_text_size">16sp</dimen>
     <dimen name="switch_button_thumbsize">26dp</dimen>
     <dimen name="switch_button_tracksize">26dp</dimen>
+    <dimen name="alert_icon_size">80sp</dimen>
+    <dimen name="corner_dialog">12dp</dimen>
+    <dimen name="progess_icon_size">120dp</dimen>
 
 </resources>

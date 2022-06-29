@@ -1,1 +1,5 @@
-<resources></resources>
+<resources>
+    <string name="wanttogoback">Do you want to go back ?</string>
+    <string name="no_internet_subheading">You are not connected to the internet.Please check your internet connection</string>
+    <string name="no_internet_heading">No Internet</string>
+</resources>

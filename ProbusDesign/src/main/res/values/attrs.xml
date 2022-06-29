@@ -12,8 +12,8 @@
         <attr name="subtitle" format="string" />
         <attr name="ischecked" format="boolean" />
         <attr name="isCustomChip" format="boolean" />
-        <attr name="chip1Text"  format="string"/>
-        <attr name="chip2Text"  format="string" />
+        <attr name="chip1Text" format="string" />
+        <attr name="chip2Text" format="string" />
     </declare-styleable>
 
     <declare-styleable name="HeadingWithCustomChipLayout">
@@ -28,6 +28,14 @@
     <declare-styleable name="ButtonRound">
         <attr name="isactive" format="boolean" />
     </declare-styleable>
+
+    <declare-styleable name="ProgessLayout">
+        <attr name="showprogess" format="boolean" />
+        <attr name="animationfile" format="reference" />
+        <attr name="progessbackground" format="color" />
+        <attr name="containlayoutenable" format="boolean" />
+    </declare-styleable>
+
 
     <declare-styleable name="ButtonFlat">
         <attr name="isactiveflatbutton" format="boolean" />

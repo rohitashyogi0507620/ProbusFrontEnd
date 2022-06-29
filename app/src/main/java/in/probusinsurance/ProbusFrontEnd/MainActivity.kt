@@ -106,7 +106,7 @@ class MainActivity : AppCompatActivity() {
 //                "Position :" + spinner.getSpinnerPosition() + " ," + selectedSpinner.Name + " : " + selectedSpinner.Id,
 //                Toast.LENGTH_SHORT
 //            ).show()
-            startActivity(Intent(applicationContext, TestActivity::class.java))
+            startActivity(Intent(applicationContext, TestActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
 
 //            if (buttonRound.isactive) {
 //                buttonRound.setButtonIsactive(false)
