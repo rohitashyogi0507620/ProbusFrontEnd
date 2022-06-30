@@ -105,11 +105,13 @@ class TestActivity : AppCompatActivity() {
     }
 
     fun exit_dialog(view: View) {
-        AlertDialog.ExitDialog(
-            this,
-            "Do you want to exit ?",
-            "Your Vehicle RJ-14-QS-7194 is already in inspection mode"
-        ).show()
+//        AlertDialog.ExitDialog(
+//            this,
+//            "Do you want to exit ?",
+//            "Your Vehicle RJ-14-QS-7194 is already in inspection mode"
+//        ).show()
+        AlertDialog.ExitDialog(this).show()
+
     }
 
     fun success_dialog(view: View) {

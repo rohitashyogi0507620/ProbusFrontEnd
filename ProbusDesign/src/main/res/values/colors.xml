@@ -37,7 +37,7 @@
     <color name="color_inputlayout_border">#666B80</color>
     <color name="color_inputlayout_error">#F12424</color>
     <color name="colorsuccess">#219E27</color>
-    <color name="background_progess">#E1F5FE</color>
+    <color name="background_progess">#7EFFFFFF</color>
 
 
 </resources>

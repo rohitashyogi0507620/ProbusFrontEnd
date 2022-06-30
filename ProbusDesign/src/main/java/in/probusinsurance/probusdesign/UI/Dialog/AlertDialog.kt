@@ -76,7 +76,7 @@ object AlertDialog {
             ViewGroup.LayoutParams.FILL_PARENT,
             ViewGroup.LayoutParams.FILL_PARENT
         )
-        val btncanle = alertdialog.findViewById<ButtonRound>(R.id.btn_cancle)
+        val btncanle = alertdialog.findViewById<ButtonOutline>(R.id.btn_cancle)
         btncanle.setOnClickListener {
             alertdialog.dismiss()
         }
