@@ -67,21 +67,7 @@ object AlertDialog {
         return alertdialog
     }
 
-    fun ExitDialog(context: Context?): Dialog {
-        val alertdialog = Dialog(context!!)
-        alertdialog.setContentView(R.layout.alert_cancle_dialog)
-        alertdialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-        alertdialog.setCanceledOnTouchOutside(false)
-        alertdialog.window!!.setLayout(
-            ViewGroup.LayoutParams.FILL_PARENT,
-            ViewGroup.LayoutParams.FILL_PARENT
-        )
-        val btncanle = alertdialog.findViewById<ButtonOutline>(R.id.btn_cancle)
-        btncanle.setOnClickListener {
-            alertdialog.dismiss()
-        }
-        return alertdialog
-    }
+
 
     // Info Dialog
     fun InfoDialog(context: Context, message: String): Dialog {
@@ -139,6 +125,22 @@ object AlertDialog {
     }
 
     //Edit Dialog
+
+    fun ExitDialog(context: Context?): Dialog {
+        val alertdialog = Dialog(context!!)
+        alertdialog.setContentView(R.layout.alert_cancle_dialog)
+        alertdialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        alertdialog.setCanceledOnTouchOutside(false)
+        alertdialog.window!!.setLayout(
+            ViewGroup.LayoutParams.FILL_PARENT,
+            ViewGroup.LayoutParams.FILL_PARENT
+        )
+        val btncanle = alertdialog.findViewById<ButtonOutline>(R.id.btn_cancle)
+        btncanle.setOnClickListener {
+            alertdialog.dismiss()
+        }
+        return alertdialog
+    }
     fun ExitDialog(context: Context?, title: String?, message: String?): Dialog {
         val alertdialog = Dialog(context!!)
         alertdialog.setContentView(R.layout.alert_cancle_dialog)

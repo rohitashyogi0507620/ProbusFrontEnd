@@ -53,7 +53,7 @@ class ProgessLayout(context: Context?, attrs: AttributeSet?) : RelativeLayout(
             if (hasBackground) {
                 progessBackground = a.getColor(R.styleable.ProgessLayout_progessbackground, 0)
             } else {
-                progessBackground = R.color.background_progess
+                progessBackground = this.resources.getColor(R.color.background_progess)
             }
 
             var hasContaintEnable = a.hasValue(R.styleable.ProgessLayout_containlayoutenable)

@@ -5,6 +5,7 @@ import `in`.probusinsurance.probusdesign.UI.Dialog.AlertDialog
 import `in`.probusinsurance.probusdesign.UI.HeadingWithCustomChipLayout
 import `in`.probusinsurance.probusdesign.UI.HeadingWithFixChipLayout
 import `in`.probusinsurance.probusdesign.UI.Layout.ProgessLayout
+import android.app.Dialog
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
