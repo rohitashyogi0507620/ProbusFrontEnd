@@ -31,6 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:ischecked="true"
+                app:withoutchip="true"
                 app:subtitle="Select yes if you want to get whatsapp message"
                 app:title="Allow to Send Text Message"></in.probusinsurance.probusdesign.UI.HeadingWithFixChipLayout>
 
@@ -43,7 +44,7 @@
                 app:isCustomChip="true"
                 app:ischecked="false"
                 app:subtitle="Select yes if you want to get whatsapp message"
-                app:title="Send sms to whatsapp"></in.probusinsurance.probusdesign.UI.HeadingWithFixChipLayout>
+                app:title="Send hatsapp"></in.probusinsurance.probusdesign.UI.HeadingWithFixChipLayout>
 
             <in.probusinsurance.probusdesign.UI.HeadingWithCustomChipLayout
                 android:id="@+id/layout_city"

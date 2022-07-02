@@ -3,6 +3,7 @@ package `in`.probusinsurance.probusdesign.UI
 import `in`.probusinsurance.probusdesign.R
 import android.content.Context
 import android.util.AttributeSet
+import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.lifecycle.LiveData
@@ -18,6 +19,11 @@ class HeadingWithFixChipLayout(context: Context, attrs: AttributeSet) :
     private var _ischecked = MutableLiveData<Boolean>()
     val ischecked: LiveData<Boolean>
         get() = _ischecked!!
+
+
+    private var _withoutchip = MutableLiveData<Boolean>()
+    val withoutchip: LiveData<Boolean>
+        get() = _withoutchip!!
 
     private var _chipgroup: ChipGroup? = null
     val chipgroup get() = _chipgroup!!
@@ -58,8 +64,10 @@ class HeadingWithFixChipLayout(context: Context, attrs: AttributeSet) :
                 false
             )
             if (ischipFix) {
-                chipfirst.text = customAttributesStyle.getString(R.styleable.HeadingWithFixChipLayout_chip1Text)
-                chipsecound.text = customAttributesStyle.getString(R.styleable.HeadingWithFixChipLayout_chip2Text)
+                chipfirst.text =
+                    customAttributesStyle.getString(R.styleable.HeadingWithFixChipLayout_chip1Text)
+                chipsecound.text =
+                    customAttributesStyle.getString(R.styleable.HeadingWithFixChipLayout_chip2Text)
             }
 
             _ischecked.value = customAttributesStyle.getBoolean(
@@ -67,6 +75,12 @@ class HeadingWithFixChipLayout(context: Context, attrs: AttributeSet) :
                 false
             )
             ischecked(_ischecked.value!!)
+
+            _withoutchip.value = customAttributesStyle.getBoolean(
+                R.styleable.HeadingWithFixChipLayout_withoutchip,
+                false
+            )
+            withoutChip(_withoutchip.value!!)
 
             chipgroup.setOnCheckedChangeListener(ChipGroup.OnCheckedChangeListener { group, checkedId ->
                 if (checkedId == R.id.chip_yes) {
@@ -94,6 +108,15 @@ class HeadingWithFixChipLayout(context: Context, attrs: AttributeSet) :
         } else {
             chipgroup.check(R.id.chip_no)
 
+        }
+    }
+
+    fun withoutChip(check: Boolean) {
+        _ischecked.value = check
+        if (_ischecked.value!!) {
+            chipgroup.visibility = View.GONE
+        } else {
+            chipgroup.visibility = View.VISIBLE
         }
     }
 

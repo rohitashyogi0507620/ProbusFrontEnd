@@ -14,6 +14,7 @@
         <attr name="isCustomChip" format="boolean" />
         <attr name="chip1Text" format="string" />
         <attr name="chip2Text" format="string" />
+        <attr name="withoutchip" format="boolean" />
     </declare-styleable>
 
     <declare-styleable name="HeadingWithCustomChipLayout">
