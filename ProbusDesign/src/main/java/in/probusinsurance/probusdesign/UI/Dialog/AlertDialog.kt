@@ -26,7 +26,7 @@ object AlertDialog {
             ViewGroup.LayoutParams.FILL_PARENT,
             ViewGroup.LayoutParams.FILL_PARENT
         )
-        val txtmessage = alertdialog.findViewById<TextViewMediumHeading>(R.id.txt_alerttitle)
+        val txtmessage:TextView = alertdialog.findViewById(R.id.txt_alertmessage)
         txtmessage.text = message
         return alertdialog
     }
@@ -40,10 +40,10 @@ object AlertDialog {
             ViewGroup.LayoutParams.FILL_PARENT,
             ViewGroup.LayoutParams.FILL_PARENT
         )
-        val txtmessage = alertdialog.findViewById<TextView>(R.id.txt_alerttitle)
-        val btn = alertdialog.findViewById<ButtonRound>(R.id.btn_ok)
-        btn.setText(btntext)
+        val txtmessage:TextView = alertdialog.findViewById(R.id.txt_alerttitle)
         txtmessage.text = message
+        val btn :ButtonRound= alertdialog.findViewById(R.id.btn_ok)
+        btn.setText(btntext)
         return alertdialog
     }
 
@@ -61,11 +61,13 @@ object AlertDialog {
             ViewGroup.LayoutParams.FILL_PARENT,
             ViewGroup.LayoutParams.FILL_PARENT
         )
-        val txtmessage = alertdialog.findViewById<TextView>(R.id.txt_alertmessage)
+        val txtmessage:TextView = alertdialog.findViewById(R.id.txt_alertmessage)
         txtmessage.visibility = View.VISIBLE
         txtmessage.text = message
-        val txttitle = alertdialog.findViewById<TextView>(R.id.txt_alerttitle)
+        val txttitle:TextView = alertdialog.findViewById(R.id.txt_alerttitle)
         txttitle.text = title
+        val btn :ButtonRound= alertdialog.findViewById(R.id.btn_ok)
+        btn.setText(btntext)
         return alertdialog
     }
 
@@ -81,7 +83,7 @@ object AlertDialog {
             ViewGroup.LayoutParams.FILL_PARENT,
             ViewGroup.LayoutParams.FILL_PARENT
         )
-        val txtmessage = alertdialog.findViewById<TextView>(R.id.txt_alerttitle)
+        val txtmessage:TextView = alertdialog.findViewById(R.id.txt_alerttitle)
         txtmessage.text = message
         return alertdialog
     }
@@ -95,8 +97,8 @@ object AlertDialog {
             ViewGroup.LayoutParams.FILL_PARENT,
             ViewGroup.LayoutParams.FILL_PARENT
         )
-        val txtmessage = alertdialog.findViewById<TextView>(R.id.txt_alerttitle)
-        val btn = alertdialog.findViewById<ButtonRound>(R.id.btn_ok)
+        val txtmessage:TextView = alertdialog.findViewById(R.id.txt_alerttitle)
+        val btn:ButtonRound = alertdialog.findViewById(R.id.btn_ok)
         btn.setText(btntext)
         txtmessage.text = message
         return alertdialog
@@ -116,12 +118,12 @@ object AlertDialog {
             ViewGroup.LayoutParams.FILL_PARENT,
             ViewGroup.LayoutParams.FILL_PARENT
         )
-        val txtmessage = alertdialog.findViewById<TextView>(R.id.txt_alertmessage)
+        val txtmessage:TextView = alertdialog.findViewById(R.id.txt_alertmessage)
         txtmessage.visibility = View.VISIBLE
         txtmessage.text = message
-        val txttitle = alertdialog.findViewById<TextView>(R.id.txt_alerttitle)
+        val txttitle:TextView = alertdialog.findViewById(R.id.txt_alerttitle)
         txttitle.text = title
-        val btn = alertdialog.findViewById<ButtonRound>(R.id.btn_ok)
+        val btn:ButtonRound = alertdialog.findViewById(R.id.btn_ok)
         btn.setText(btntext)
         return alertdialog
     }
@@ -137,7 +139,7 @@ object AlertDialog {
             ViewGroup.LayoutParams.FILL_PARENT,
             ViewGroup.LayoutParams.FILL_PARENT
         )
-        val btncanle = alertdialog.findViewById<ButtonOutline>(R.id.btn_cancle)
+        val btncanle:ButtonOutline = alertdialog.findViewById(R.id.btn_cancle)
         btncanle.setOnClickListener {
             alertdialog.dismiss()
         }
@@ -152,13 +154,13 @@ object AlertDialog {
             ViewGroup.LayoutParams.FILL_PARENT,
             ViewGroup.LayoutParams.FILL_PARENT
         )
-        val btncanle = alertdialog.findViewById<ButtonOutline>(R.id.btn_cancle)
+        val btncanle:ButtonOutline = alertdialog.findViewById(R.id.btn_cancle)
         btncanle.setOnClickListener {
             alertdialog.dismiss()
         }
-        val txttitle = alertdialog.findViewById<TextView>(R.id.txt_alerttitle)
+        val txttitle:TextView = alertdialog.findViewById(R.id.txt_alerttitle)
         txttitle.text = title
-        val txtmessage = alertdialog.findViewById<TextView>(R.id.txt_alertmessage)
+        val txtmessage :TextView= alertdialog.findViewById(R.id.txt_alertmessage)
         txtmessage.text = message
 
         return alertdialog
@@ -175,9 +177,9 @@ object AlertDialog {
             ViewGroup.LayoutParams.FILL_PARENT,
             ViewGroup.LayoutParams.FILL_PARENT
         )
-        val txttitle = alertdialog.findViewById<TextView>(R.id.txt_alerttitle)
+        val txttitle:TextView = alertdialog.findViewById(R.id.txt_alerttitle)
         txttitle.text = title
-        val txtmessage = alertdialog.findViewById<TextView>(R.id.txt_alertmessage)
+        val txtmessage:TextView = alertdialog.findViewById(R.id.txt_alertmessage)
         txtmessage.text = message
         return alertdialog
     }
