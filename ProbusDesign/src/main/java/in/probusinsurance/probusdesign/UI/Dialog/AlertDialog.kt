@@ -3,6 +3,8 @@ package `in`.probusinsurance.probusdesign.UI.Dialog
 import `in`.probusinsurance.probusdesign.R
 import `in`.probusinsurance.probusdesign.UI.Button.ButtonOutline
 import `in`.probusinsurance.probusdesign.UI.Button.ButtonRound
+import `in`.probusinsurance.probusdesign.UI.TextView.TextViewMediumHeading
+import android.app.Activity
 import android.app.Dialog
 import android.content.Context
 import android.graphics.Color
@@ -15,7 +17,7 @@ object AlertDialog {
 
 
     //Error Dialog
-    fun ErrorDialog(context: Context, message: String): Dialog {
+    fun ErrorDialog(context: Activity, message: String): Dialog {
         val alertdialog = Dialog(context)
         alertdialog.setContentView(R.layout.alert_dialog)
         alertdialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
@@ -24,12 +26,12 @@ object AlertDialog {
             ViewGroup.LayoutParams.FILL_PARENT,
             ViewGroup.LayoutParams.FILL_PARENT
         )
-        val txtmessage = alertdialog.findViewById<TextView>(R.id.txt_alerttitle)
+        val txtmessage = alertdialog.findViewById<TextViewMediumHeading>(R.id.txt_alerttitle)
         txtmessage.text = message
         return alertdialog
     }
 
-    fun ErrorDialog(context: Context, message: String, btntext: String): Dialog {
+    fun ErrorDialog(context: Activity, message: String, btntext: String): Dialog {
         val alertdialog = Dialog(context)
         alertdialog.setContentView(R.layout.alert_dialog)
         alertdialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
@@ -46,7 +48,7 @@ object AlertDialog {
     }
 
     fun ErrorDialog(
-        context: Context?,
+        context: Activity,
         title: String?,
         message: String?,
         btntext: String
@@ -70,7 +72,7 @@ object AlertDialog {
 
 
     // Info Dialog
-    fun InfoDialog(context: Context, message: String): Dialog {
+    fun InfoDialog(context: Activity, message: String): Dialog {
         val alertdialog = Dialog(context)
         alertdialog.setContentView(R.layout.info_dialog)
         alertdialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
@@ -84,7 +86,7 @@ object AlertDialog {
         return alertdialog
     }
 
-    fun InfoDialog(context: Context, message: String, btntext: String): Dialog {
+    fun InfoDialog(context: Activity, message: String, btntext: String): Dialog {
         val alertdialog = Dialog(context)
         alertdialog.setContentView(R.layout.info_dialog)
         alertdialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
@@ -101,7 +103,7 @@ object AlertDialog {
     }
 
     fun InfoDialog(
-        context: Context?,
+        context: Activity,
         title: String?,
         message: String?,
         btntext: String
@@ -126,7 +128,7 @@ object AlertDialog {
 
     //Edit Dialog
 
-    fun ExitDialog(context: Context?): Dialog {
+    fun ExitDialog(context: Activity): Dialog {
         val alertdialog = Dialog(context!!)
         alertdialog.setContentView(R.layout.alert_cancle_dialog)
         alertdialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
@@ -141,7 +143,7 @@ object AlertDialog {
         }
         return alertdialog
     }
-    fun ExitDialog(context: Context?, title: String?, message: String?): Dialog {
+    fun ExitDialog(context: Activity, title: String?, message: String?): Dialog {
         val alertdialog = Dialog(context!!)
         alertdialog.setContentView(R.layout.alert_cancle_dialog)
         alertdialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
@@ -164,7 +166,7 @@ object AlertDialog {
 
     //Sucess  Dialog
 
-    fun SuccessDialog(context: Context?, title: String?, message: String?): Dialog {
+    fun SuccessDialog(context: Activity, title: String?, message: String?): Dialog {
         val alertdialog = Dialog(context!!)
         alertdialog.setContentView(R.layout.success_dialog)
         alertdialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
@@ -180,7 +182,7 @@ object AlertDialog {
         return alertdialog
     }
 
-    fun NoInternetDialog(context: Context?): Dialog {
+    fun NoInternetDialog(context: Activity): Dialog {
         val alertdialog = Dialog(context!!)
         alertdialog.setContentView(R.layout.nointernet_dialog)
         alertdialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))

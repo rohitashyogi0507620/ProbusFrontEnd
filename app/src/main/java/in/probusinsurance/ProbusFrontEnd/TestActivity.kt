@@ -9,6 +9,7 @@ import android.app.Dialog
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.RelativeLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -61,13 +62,18 @@ class TestActivity : AppCompatActivity() {
         var parentlayout = findViewById<RelativeLayout>(R.id.relative_layout)
 
         var progessLayout = findViewById<ProgessLayout>(R.id.layout_progess)
-         progessLayout.setEnableControls(false, progessLayout)
+        progessLayout.setEnableControls(false, progessLayout)
 
         // progessLayout.enableControl(true, parentlayout)
         //  progessLayout.setanimationFile(R.raw.progess_2)
 //        var progessLayout=ProgessLayout(applicationContext,null)
 //        parentlayout.addView(progessLayout)
 //        disableEnableControls(false,parentlayout)
+
+        val alertdialog: Dialog = AlertDialog.ErrorDialog(this, "Hello Bro This is erro dialog")
+        val btnok = alertdialog.findViewById<Button>(`in`.probusinsurance.probusdesign.R.id.btn_ok)
+        btnok.setOnClickListener { view1: View? -> alertdialog.dismiss() }
+        alertdialog.show()
 
     }
 
