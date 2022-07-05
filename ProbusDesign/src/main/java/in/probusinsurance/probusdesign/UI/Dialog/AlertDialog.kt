@@ -26,7 +26,7 @@ object AlertDialog {
             ViewGroup.LayoutParams.FILL_PARENT,
             ViewGroup.LayoutParams.FILL_PARENT
         )
-        val txtmessage:TextView = alertdialog.findViewById(R.id.txt_alertmessage)
+        val txtmessage:TextView = alertdialog.findViewById(R.id.txt_alerttitle)
         txtmessage.text = message
         return alertdialog
     }
