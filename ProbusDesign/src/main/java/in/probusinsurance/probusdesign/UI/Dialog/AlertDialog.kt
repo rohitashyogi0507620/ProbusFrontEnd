@@ -28,6 +28,7 @@ object AlertDialog {
         )
         val txtmessage:TextView = alertdialog.findViewById(R.id.txt_alerttitle)
         txtmessage.text = message
+        alertdialog.show()
         return alertdialog
     }
 
@@ -44,6 +45,7 @@ object AlertDialog {
         txtmessage.text = message
         val btn :ButtonRound= alertdialog.findViewById(R.id.btn_ok)
         btn.setText(btntext)
+        alertdialog.show()
         return alertdialog
     }
 
@@ -68,6 +70,7 @@ object AlertDialog {
         txttitle.text = title
         val btn :ButtonRound= alertdialog.findViewById(R.id.btn_ok)
         btn.setText(btntext)
+        alertdialog.show()
         return alertdialog
     }
 
@@ -85,6 +88,7 @@ object AlertDialog {
         )
         val txtmessage:TextView = alertdialog.findViewById(R.id.txt_alerttitle)
         txtmessage.text = message
+        alertdialog.show()
         return alertdialog
     }
 
@@ -101,6 +105,7 @@ object AlertDialog {
         val btn:ButtonRound = alertdialog.findViewById(R.id.btn_ok)
         btn.setText(btntext)
         txtmessage.text = message
+        alertdialog.show()
         return alertdialog
     }
 
@@ -125,6 +130,7 @@ object AlertDialog {
         txttitle.text = title
         val btn:ButtonRound = alertdialog.findViewById(R.id.btn_ok)
         btn.setText(btntext)
+        alertdialog.show()
         return alertdialog
     }
 
@@ -143,6 +149,7 @@ object AlertDialog {
         btncanle.setOnClickListener {
             alertdialog.dismiss()
         }
+        alertdialog.show()
         return alertdialog
     }
     fun ExitDialog(context: Activity, title: String?, message: String?): Dialog {
@@ -162,7 +169,7 @@ object AlertDialog {
         txttitle.text = title
         val txtmessage :TextView= alertdialog.findViewById(R.id.txt_alertmessage)
         txtmessage.text = message
-
+        alertdialog.show()
         return alertdialog
     }
 
@@ -181,6 +188,7 @@ object AlertDialog {
         txttitle.text = title
         val txtmessage:TextView = alertdialog.findViewById(R.id.txt_alertmessage)
         txtmessage.text = message
+        alertdialog.show()
         return alertdialog
     }
 
@@ -193,6 +201,7 @@ object AlertDialog {
             ViewGroup.LayoutParams.FILL_PARENT,
             ViewGroup.LayoutParams.FILL_PARENT
         )
+        alertdialog.show()
         return alertdialog
     }
 
