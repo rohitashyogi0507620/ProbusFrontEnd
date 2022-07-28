@@ -49,10 +49,12 @@
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/layout/nointernet_dialog.xml" value="0.25" />
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/layout/spinner_item.xml" value="0.20416666666666666" />
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/layout/success_dialog.xml" value="0.22" />
+        <entry key="..\:/ProbusFrontEnd/app/src/main/res/layout/activity_fragment.xml" value="0.20416666666666666" />
         <entry key="..\:/ProbusFrontEnd/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/ProbusFrontEnd/app/src/main/res/layout/activity_main2.xml" value="0.20416666666666666" />
         <entry key="..\:/ProbusFrontEnd/app/src/main/res/layout/activity_second.xml" value="0.20416666666666666" />
-        <entry key="..\:/ProbusFrontEnd/app/src/main/res/layout/activity_test.xml" value="0.18" />
+        <entry key="..\:/ProbusFrontEnd/app/src/main/res/layout/activity_test.xml" value="0.25" />
+        <entry key="..\:/ProbusFrontEnd/app/src/main/res/layout/fragment_test.xml" value="0.1" />
         <entry key="..\:/ProbusFrontEnd/app/src/main/res/layout/layout_item_checkbox.xml" value="0.20416666666666666" />
       </map>
     </option>

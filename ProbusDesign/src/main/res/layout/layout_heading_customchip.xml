@@ -8,7 +8,6 @@
     android:layout_marginRight="@dimen/margin_15dp"
     android:orientation="vertical">>
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,11 +15,13 @@
 
         <in.probusinsurance.probusdesign.UI.TextView.TextViewSmallHeading
             android:id="@+id/txt_heading"
+            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Heading Will Appers Here"></in.probusinsurance.probusdesign.UI.TextView.TextViewSmallHeading>
+            android:hint=""></in.probusinsurance.probusdesign.UI.TextView.TextViewSmallHeading>
 
         <View
+            android:layout_gravity="center"
             android:layout_width="@dimen/line_width"
             android:layout_height="@dimen/line_height"
             android:layout_marginLeft="10dp"
@@ -33,7 +34,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_5dp"
-        android:hint="Your Sub Title will be apper here"></in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingLight>
+        android:hint=""></in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingLight>
+
 
     <in.probusinsurance.probusdesign.UI.Chip.ChipGroupSingleSelection
         android:id="@+id/chip_group"

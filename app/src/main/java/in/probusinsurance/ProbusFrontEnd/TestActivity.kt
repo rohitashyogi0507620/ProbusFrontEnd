@@ -6,6 +6,7 @@ import `in`.probusinsurance.probusdesign.UI.HeadingWithCustomChipLayout
 import `in`.probusinsurance.probusdesign.UI.HeadingWithFixChipLayout
 import `in`.probusinsurance.probusdesign.UI.Layout.ProgessLayout
 import android.app.Dialog
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
@@ -13,6 +14,7 @@ import android.widget.Button
 import android.widget.RelativeLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 
 
@@ -21,6 +23,7 @@ class TestActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_test)
+
         var yesnolayout = findViewById<HeadingWithFixChipLayout>(R.id.layout_yesno)
         var whatsapp = findViewById<HeadingWithFixChipLayout>(R.id.whatsapp)
         yesnolayout.ischecked.observe(this, Observer {
@@ -70,11 +73,7 @@ class TestActivity : AppCompatActivity() {
 //        parentlayout.addView(progessLayout)
 //        disableEnableControls(false,parentlayout)
 
-        val alertdialog: Dialog = AlertDialog.ErrorDialog(this, "Hello Bro This is erro dialog")
-        val btnok = alertdialog.findViewById<Button>(`in`.probusinsurance.probusdesign.R.id.btn_ok)
-        btnok.setOnClickListener { view1: View? -> alertdialog.dismiss() }
-        alertdialog.show()
-
+        startActivity(Intent(applicationContext,FragmentActivity::class.java))
     }
 
     private fun disableEnableControls(enable: Boolean, vg: ViewGroup) {

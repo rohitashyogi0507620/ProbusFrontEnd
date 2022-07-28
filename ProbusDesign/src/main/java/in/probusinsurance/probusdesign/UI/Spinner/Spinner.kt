@@ -42,6 +42,7 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
                 ) {
                     _selectedItem.postValue(list_Item.get(i))
                     _itemposition.postValue(i)
+
                 }
 
                 override fun onNothingSelected(adapterView: AdapterView<*>?) {}
@@ -126,6 +127,7 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
         errorText.error = ""
         errorText.setTextColor(context.resources.getColor(R.color.color_inputlayout_error)) //just to highlight that this is an error
         errorText.text = errormesage
+
 
     }
 

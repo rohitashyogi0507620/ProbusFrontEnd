@@ -39,6 +39,8 @@ class AutoComplete(context: Context, attrs: AttributeSet?) :
         this.setOnItemClickListener(OnItemClickListener { adapterView, view, i, l ->
             _selectedItem.postValue(adapterView.adapter.getItem(i) as MasterEntity)
             _itemposition.postValue(i)
+            this.setSelection(this.text.length)
+            this.error=null
         })
 
 
