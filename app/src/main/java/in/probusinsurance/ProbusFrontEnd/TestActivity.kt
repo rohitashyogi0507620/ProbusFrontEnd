@@ -65,7 +65,7 @@ class TestActivity : AppCompatActivity() {
         var parentlayout = findViewById<RelativeLayout>(R.id.relative_layout)
 
         var progessLayout = findViewById<ProgessLayout>(R.id.layout_progess)
-        progessLayout.setEnableControls(false, progessLayout)
+     //   progessLayout.setEnableControls(false, progessLayout)
 
         // progessLayout.enableControl(true, parentlayout)
         //  progessLayout.setanimationFile(R.raw.progess_2)
@@ -73,7 +73,7 @@ class TestActivity : AppCompatActivity() {
 //        parentlayout.addView(progessLayout)
 //        disableEnableControls(false,parentlayout)
 
-        startActivity(Intent(applicationContext,FragmentActivity::class.java))
+        //startActivity(Intent(applicationContext,FragmentActivity::class.java))
     }
 
     private fun disableEnableControls(enable: Boolean, vg: ViewGroup) {
@@ -121,11 +121,22 @@ class TestActivity : AppCompatActivity() {
     }
 
     fun success_dialog(view: View) {
-        AlertDialog.SuccessDialog(
+//        AlertDialog.SuccessDialog(
+//            this,
+//            "Thank You",
+//            "Policy is done for your vehicle RJ-14-QS-7845 .Your Policy start from 24-Jun-2022 to 25-jun-2024 with pa covered"
+//        ).show()
+
+        val alertdialog = AlertDialog.SuccessDialog(
             this,
-            "Thank You",
-            "Policy is done for your vehicle RJ-14-QS-7845 .Your Policy start from 24-Jun-2022 to 25-jun-2024 with pa covered"
-        ).show()
+            "Thank You !",
+            "Your Forward Payment request has been sent successfully. Your Quotation Number is : "
+        )
+        val btn = alertdialog.findViewById<Button>(`in`.probusinsurance.probusdesign.R.id.btn_ok)
+        btn.text = "Ok"
+        btn.setOnClickListener { view: View? ->
+
+        }
     }
 
     fun nointernet_dialog(view: View) {

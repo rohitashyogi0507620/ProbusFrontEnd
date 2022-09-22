@@ -116,7 +116,7 @@
     <in.probusinsurance.probusdesign.UI.Layout.ProgessLayout
         android:id="@+id/layout_progess"
         android:layout_width="match_parent"
-        app:showprogess="true"
+        app:showprogess="false"
         app:containlayoutenable="false"
         app:animationfile="@raw/progess_2"
         android:layout_height="match_parent">

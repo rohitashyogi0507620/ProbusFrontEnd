@@ -36,29 +36,39 @@
                 <in.probusinsurance.probusdesign.UI.TextView.TextViewLargeHeading
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="This is Large Heading style"></in.probusinsurance.probusdesign.UI.TextView.TextViewLargeHeading>
+                    android:text="This is Large Heading style"
+                    app:customColor="@color/colorPrimary"
+                    app:customColorEnable="true"/>
 
                 <in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingLight
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="This is Sub Heading with light color style">
-
-                </in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingLight>
+                    app:customColorEnable="true"
+                    app:customColor="@color/colorsuccess"
+                    android:text="This is Sub Heading with light color style"
+                    />
 
                 <in.probusinsurance.probusdesign.UI.TextView.TextViewSmallHeading
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="This Is Small Heading Style"></in.probusinsurance.probusdesign.UI.TextView.TextViewSmallHeading>
+                    android:text="This Is Small Heading Style"
+                    app:customColorEnable="true"
+                    app:customColor="@color/colorsuccess"/>
 
                 <in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingLarge
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="This Is  Sub Heading Large Style"></in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingLarge>
+                    android:text="This Is  Sub Heading Large Style"
+                    app:customColorEnable="true"
+                    app:customColor="@color/colorsuccess"
+                    />
 
                 <in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingSmall
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="This Is  Sub Heading Small Style"></in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingSmall>
+                    android:text="This Is  Sub Heading Small Style"
+                    app:customColor="@color/colorPrimary"
+                    app:customColorEnable="true"/>
 
                 <RadioGroup
                     android:layout_width="match_parent"
@@ -145,8 +155,10 @@
                 <in.probusinsurance.probusdesign.UI.SwitchButton.SwitchButton
                     style="@style/SwitchButton_Style"
                     android:layout_width="wrap_content"
-                    android:checked="true"
-                    android:layout_height="wrap_content"></in.probusinsurance.probusdesign.UI.SwitchButton.SwitchButton>
+                    android:layout_height="wrap_content"
+                    android:checked="true"></in.probusinsurance.probusdesign.UI.SwitchButton.SwitchButton>
+
+
                 <in.probusinsurance.probusdesign.UI.EditText.EditTextInput
                     android:id="@+id/il_txt"
                     style="@style/EditText_Style_Outline"
@@ -171,6 +183,7 @@
                     style="@style/CheckBox_Single_Style"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_back"
                     android:text="Cover against 19 critical illnesses"></in.probusinsurance.probusdesign.UI.CheckBox.SingleCheckBox>
 
                 <in.probusinsurance.probusdesign.UI.CheckBox.SingleCheckBox

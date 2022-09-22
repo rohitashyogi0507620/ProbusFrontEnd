@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(){
 
     lateinit var ll_checkbox: LinearLayout
     lateinit var il_txt: EditTextInput
@@ -94,7 +94,7 @@ class MainActivity : AppCompatActivity() {
 
 //            selected = autocomplete.getAutoCompleteSelectedItem()
 //            selectedSpinner = spinner.getSpinnerSelectedItem()
-             spinner.setError("Nhi Bhai ")
+            // spinner.setError("Nhi Bhai ")
 
 //
 //            Toast.makeText(
@@ -108,13 +108,15 @@ class MainActivity : AppCompatActivity() {
 //                "Position :" + spinner.getSpinnerPosition() + " ," + selectedSpinner.Name + " : " + selectedSpinner.Id,
 //                Toast.LENGTH_SHORT
 //            ).show()
-          //  startActivity(Intent(applicationContext, TestActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
+           startActivity(Intent(applicationContext, TestActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
 
 //            if (buttonRound.isactive) {
 //                buttonRound.setButtonIsactive(false)
 //            } else {
 //                buttonRound.setButtonIsactive(true)
 //            }
+
+
         }
 
 
@@ -140,5 +142,6 @@ class MainActivity : AppCompatActivity() {
     fun fun_startmodule() {
         ProbusDesign.StartDesignActivity(applicationContext)
     }
+
 
 }

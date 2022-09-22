@@ -45,16 +45,14 @@ class HeadingWithCustomChipLayout(context: Context, attrs: AttributeSet) :
 
         inflate(context, R.layout.layout_heading_customchip, this)
 
-        val customAttributesStyle =
-            context.obtainStyledAttributes(attrs, R.styleable.HeadingWithCustomChipLayout, 0, 0)
+        val customAttributesStyle = context.obtainStyledAttributes(attrs, R.styleable.HeadingWithCustomChipLayout, 0, 0)
         _heading = findViewById(R.id.txt_heading)
         _subheading = findViewById(R.id.txt_subheading)
         _chipgroup = findViewById(R.id.chip_group)
 
         try {
 
-            heading.text =
-                customAttributesStyle.getText(R.styleable.HeadingWithCustomChipLayout_headingtitle)
+            heading.text = customAttributesStyle.getText(R.styleable.HeadingWithCustomChipLayout_headingtitle)
             subheading.text =
                 customAttributesStyle.getString(R.styleable.HeadingWithCustomChipLayout_subheadingtitle)
 

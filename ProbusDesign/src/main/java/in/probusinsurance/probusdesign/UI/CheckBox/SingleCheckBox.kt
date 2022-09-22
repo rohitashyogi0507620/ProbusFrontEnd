@@ -15,5 +15,6 @@ class SingleCheckBox(context: Context?, attrs: AttributeSet?) :
     init {
         this.setTextAppearance(R.style.CheckBox_Single_Style)
 
+
     }
 }

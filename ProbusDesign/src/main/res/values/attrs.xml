@@ -48,5 +48,48 @@
         <attr name="errorIcon" format="reference" />
     </declare-styleable>
 
+    <attr name="customColorEnable" format="boolean" />
+    <attr name="customColor" format="color" />
+
+    <declare-styleable name="TextViewSubHeadingSmall">
+        <attr name="customColorEnable" />
+        <attr name="customColor" />
+    </declare-styleable>
+
+    <declare-styleable name="TextViewSubHeadingLight">
+        <attr name="customColorEnable" />
+        <attr name="customColor" />
+    </declare-styleable>
+
+    <declare-styleable name="TextViewLargeHeading">
+        <attr name="customColorEnable" />
+        <attr name="customColor" />
+    </declare-styleable>
+
+    <declare-styleable name="TextViewMediumHeading">
+        <attr name="customColorEnable" />
+        <attr name="customColor" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TextViewSubHeadingLarge">
+        <attr name="customColorEnable" />
+        <attr name="customColor" />
+    </declare-styleable>
+
+    <declare-styleable name="TextViewSmallHeading">
+        <attr name="customColorEnable" />
+        <attr name="customColor" />
+    </declare-styleable>
+
+    <declare-styleable name="TextViewReviewHeading">
+        <attr name="customColorEnable" />
+        <attr name="customColor" />
+    </declare-styleable>
+    <declare-styleable name="TextViewReviewData">
+        <attr name="customColorEnable" />
+        <attr name="customColor" />
+    </declare-styleable>
+
 
 </resources>
