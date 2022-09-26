@@ -185,6 +185,16 @@
                         android:layout_gravity="center_horizontal"
                         android:checked="true" />
 
+                    <in.probusinsurance.probusdesign.UI.CheckBox.SingleCheckBox
+                        style="@style/CheckBox_Single_Round_Margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:checked="true"
+
+                        />
+
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
