@@ -4,7 +4,7 @@
     <corners android:radius="@dimen/button_corner_8dp" />
     <stroke
         android:dashWidth="@dimen/margin_10dp"
-        android:width="@dimen/border_2dp"
+        android:width="@dimen/border_1dp"
         android:color="@color/color_radio_button_border_unselected"
         />
 </shape>
