@@ -206,7 +206,7 @@
     </style>
 
 
-    <style name="SwitchButton_Style">
+    <style name="SwitchButton_Style" parent="Widget.AppCompat.CompoundButton.Switch">
         <item name="android:thumb">@drawable/switchcustom_thumb</item>
         <item name="track">@drawable/switchcustom_track</item>
         <item name="android:showText">false</item>

@@ -235,9 +235,9 @@
 
 
                     <ImageView
-                        android:layout_gravity="center_vertical"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
                         android:padding="@dimen/margin_5dp"
                         app:srcCompat="@drawable/icici" />
 
