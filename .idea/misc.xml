@@ -5,7 +5,13 @@
       <map>
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/background_round_design_arrow.xml" value="0.1185" />
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/background_spinner.xml" value="0.116" />
-        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/check_button_insert.xml" value="0.169" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/check_button_insert.xml" value="0.12" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/check_layout_background doted.xml" value="0.1715" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/check_layout_background.xml" value="0.2" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/check_layout_background_doted.xml" value="0.1715" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/check_round_insert.xml" value="0.13" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/checkbox_button_drawable.xml" value="0.13" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/checkbox_round_drawable.xml" value="0.13" />
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/chip_stroke_color.xml" value="0.136" />
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/custom_thumb.xml" value="0.125" />
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/custom_track.xml" value="0.125" />
@@ -13,11 +19,15 @@
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/ic_back.xml" value="0.125" />
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/ic_checkboxchecked.xml" value="0.169" />
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/ic_checkboxunchecked.xml" value="0.169" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/ic_checked.xml" value="0.1715" />
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/ic_done.xml" value="0.1885" />
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/ic_info.xml" value="0.1885" />
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/ic_password_missmatch.xml" value="0.1" />
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/ic_report_problem_24.xml" value="0.1885" />
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/ic_spinner_expend.xml" value="0.1525" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/ic_unchecked.xml" value="0.13" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/layout_check_drawable.xml" value="0.13" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/layout_check_drawable_doted.xml" value="0.1715" />
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/radio_button_drawable.xml" value="0.133" />
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/radiobtn_selected.xml" value="0.136" />
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/radiobuttonUnselected.xml" value="0.14" />
@@ -31,6 +41,8 @@
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/radiobuttonunselected.xml" value="0.136" />
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/switchcustom_thumb.xml" value="0.1" />
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/switchcustom_track.xml" value="0.16" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/uncheck_layout_background.xml" value="0.13" />
+        <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/drawable/uncheck_layout_background_doted.xml" value="0.1715" />
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/layout/activity_probusdesignmain.xml" value="0.25" />
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/layout/activity_second.xml" value="0.203125" />
@@ -52,7 +64,7 @@
         <entry key="..\:/ProbusFrontEnd/ProbusDesign/src/main/res/layout/success_dialog.xml" value="0.22" />
         <entry key="..\:/ProbusFrontEnd/app/src/main/res/drawable/custom_round_checkbox.xml" value="0.1165" />
         <entry key="..\:/ProbusFrontEnd/app/src/main/res/layout/activity_fragment.xml" value="0.20416666666666666" />
-        <entry key="..\:/ProbusFrontEnd/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/ProbusFrontEnd/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/ProbusFrontEnd/app/src/main/res/layout/activity_main2.xml" value="0.20416666666666666" />
         <entry key="..\:/ProbusFrontEnd/app/src/main/res/layout/activity_second.xml" value="0.20416666666666666" />
         <entry key="..\:/ProbusFrontEnd/app/src/main/res/layout/activity_test.xml" value="0.25" />

@@ -38,37 +38,35 @@
                     android:layout_height="wrap_content"
                     android:text="This is Large Heading style"
                     app:customColor="@color/colorPrimary"
-                    app:customColorEnable="true"/>
+                    app:customColorEnable="true" />
 
                 <in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingLight
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:customColorEnable="true"
-                    app:customColor="@color/colorsuccess"
                     android:text="This is Sub Heading with light color style"
-                    />
+                    app:customColor="@color/colorsuccess"
+                    app:customColorEnable="true" />
 
                 <in.probusinsurance.probusdesign.UI.TextView.TextViewSmallHeading
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="This Is Small Heading Style"
-                    app:customColorEnable="true"
-                    app:customColor="@color/colorsuccess"/>
+                    app:customColor="@color/colorsuccess"
+                    app:customColorEnable="true" />
 
                 <in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingLarge
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="This Is  Sub Heading Large Style"
-                    app:customColorEnable="true"
                     app:customColor="@color/colorsuccess"
-                    />
+                    app:customColorEnable="true" />
 
                 <in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingSmall
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="This Is  Sub Heading Small Style"
                     app:customColor="@color/colorPrimary"
-                    app:customColorEnable="true"/>
+                    app:customColorEnable="true" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
@@ -172,6 +170,87 @@
                         android:layout_height="wrap_content"
                         android:hint="Enter Email"></in.probusinsurance.probusdesign.UI.EditText.EmailEditText>
                 </in.probusinsurance.probusdesign.UI.EditText.EditTextInput>
+
+
+                <in.probusinsurance.probusdesign.UI.Layout.CheckableLinearLayout
+                    style="@style/Checkable_LinearLayout_Doted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <in.probusinsurance.probusdesign.UI.CheckBox.SingleCheckBox
+                        style="@style/CheckBox_Single_DotRound_No_Margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:checked="true" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/margin_10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin_5dp"
+                            app:srcCompat="@drawable/icici" />
+
+                        <in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingLarge
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="iProtect Smart" />
+
+                        <in.probusinsurance.probusdesign.UI.TextView.TextViewLargeHeading
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="25000/- Monthly"
+
+                            />
+
+                    </LinearLayout>
+
+
+                </in.probusinsurance.probusdesign.UI.Layout.CheckableLinearLayout>
+
+
+                <in.probusinsurance.probusdesign.UI.Layout.CheckableLinearLayout
+                    style="@style/Checkable_LinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <in.probusinsurance.probusdesign.UI.CheckBox.SingleCheckBox
+                        style="@style/CheckBox_Single_Round_Margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:checked="true" />
+
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_5dp"
+                        app:srcCompat="@drawable/icici" />
+
+                    <in.probusinsurance.probusdesign.UI.TextView.TextViewMediumHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+
+                        android:gravity="center"
+                        android:text="ICICI " />
+
+
+                </in.probusinsurance.probusdesign.UI.Layout.CheckableLinearLayout>
 
 
                 <in.probusinsurance.probusdesign.UI.Button.BackButton

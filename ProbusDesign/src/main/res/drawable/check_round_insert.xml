@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <inset xmlns:android="http://schemas.android.com/apk/res/android"
-    android:drawable="@drawable/checkbox_button_drawable"
+    android:drawable="@drawable/checkbox_round_drawable"
     android:insetLeft="@dimen/margin_15dp"
     android:insetRight="@dimen/margin_15dp"></inset>
