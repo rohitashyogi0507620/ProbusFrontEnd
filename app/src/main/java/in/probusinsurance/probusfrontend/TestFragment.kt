@@ -1,4 +1,4 @@
-package `in`.probusinsurance.ProbusFrontEnd
+package `in`.probusinsurance.probusfrontend
 
 import android.os.Bundle
 import android.view.LayoutInflater

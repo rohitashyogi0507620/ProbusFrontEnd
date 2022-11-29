@@ -1,4 +1,4 @@
-package `in`.probusinsurance.ProbusFrontEnd
+package `in`.probusinsurance.probusfrontend
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

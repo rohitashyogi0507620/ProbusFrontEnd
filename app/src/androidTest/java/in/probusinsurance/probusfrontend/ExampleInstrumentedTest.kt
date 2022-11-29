@@ -1,4 +1,4 @@
-package `in`.probusinsurance.ProbusFrontEnd
+package `in`.probusinsurance.probusfrontend
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
