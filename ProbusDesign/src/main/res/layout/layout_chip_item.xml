@@ -1,4 +1,4 @@
-<in.probusinsurance.probusdesign.UI.Chip.SingleChip xmlns:android="http://schemas.android.com/apk/res/android"
+<in.probusinsurance.probusdesign.ui.chip.SingleChip xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/Chip_Single_Style"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"

@@ -17,5 +17,13 @@ class BindingTestActivity : AppCompatActivity() {
         binding.btntest.setOnClickListener {
             Toast.makeText(applicationContext,"Hello",Toast.LENGTH_SHORT).show()
         }
+        binding.bntback.setOnClickListener{
+            Toast.makeText(applicationContext,"Back Button",Toast.LENGTH_SHORT).show()
+
+        }
+        binding.libtestbtn.setOnClickListener{
+            Toast.makeText(applicationContext,"Lib Back Button",Toast.LENGTH_SHORT).show()
+
+        }
     }
 }

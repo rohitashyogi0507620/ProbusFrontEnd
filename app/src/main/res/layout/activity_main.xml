@@ -33,35 +33,35 @@
                     app:layout_constraintTop_toTopOf="parent" />
                 <!--    Radio Group and Radio button-->
 
-                <in.probusinsurance.probusdesign.UI.TextView.TextViewLargeHeading
+                <in.probusinsurance.probusdesign.ui.textview.TextViewLargeHeading
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="This is Large Heading style"
                     app:customColor="@color/colorPrimary"
                     app:customColorEnable="true" />
 
-                <in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingLight
+                <in.probusinsurance.probusdesign.ui.textview.TextViewSubHeadingLight
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="This is Sub Heading with light color style"
                     app:customColor="@color/colorsuccess"
                     app:customColorEnable="true" />
 
-                <in.probusinsurance.probusdesign.UI.TextView.TextViewSmallHeading
+                <in.probusinsurance.probusdesign.ui.textview.TextViewSmallHeading
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="This Is Small Heading Style"
                     app:customColor="@color/colorsuccess"
                     app:customColorEnable="true" />
 
-                <in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingLarge
+                <in.probusinsurance.probusdesign.ui.textview.TextViewSubHeadingLarge
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="This Is  Sub Heading Large Style"
                     app:customColor="@color/colorsuccess"
                     app:customColorEnable="true" />
 
-                <in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingSmall
+                <in.probusinsurance.probusdesign.ui.textview.TextViewSubHeadingSmall
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="This Is  Sub Heading Small Style"
@@ -75,7 +75,7 @@
                     android:gravity="center_vertical|center_horizontal"
                     android:orientation="horizontal">
 
-                    <in.probusinsurance.probusdesign.UI.RadioButton.RadioButtonGender
+                    <in.probusinsurance.probusdesign.ui.radiobutton.RadioButtonGender
                         android:id="@+id/male"
                         style="@style/RadioButton_Gender_Style"
                         android:layout_width="0dp"
@@ -83,16 +83,16 @@
                         android:layout_marginLeft="@dimen/margin_5dp"
                         android:layout_marginRight="@dimen/margin_5dp"
                         android:layout_weight="1"
-                        android:text="Male"></in.probusinsurance.probusdesign.UI.RadioButton.RadioButtonGender>
+                        android:text="Male"></in.probusinsurance.probusdesign.ui.radiobutton.RadioButtonGender>
 
-                    <in.probusinsurance.probusdesign.UI.RadioButton.RadioButtonGender
+                    <in.probusinsurance.probusdesign.ui.radiobutton.RadioButtonGender
                         style="@style/RadioButton_Gender_Style"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/margin_5dp"
                         android:layout_marginRight="@dimen/margin_5dp"
                         android:layout_weight="1"
-                        android:text="Female"></in.probusinsurance.probusdesign.UI.RadioButton.RadioButtonGender>
+                        android:text="Female"></in.probusinsurance.probusdesign.ui.radiobutton.RadioButtonGender>
 
                 </RadioGroup>
 
@@ -102,90 +102,90 @@
                     android:orientation="vertical">
 
 
-                    <in.probusinsurance.probusdesign.UI.Chip.ChipGroupSingleSelection
+                    <in.probusinsurance.probusdesign.ui.chip.ChipGroupSingleSelection
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
-                        <in.probusinsurance.probusdesign.UI.Chip.SingleChip
+                        <in.probusinsurance.probusdesign.ui.chip.SingleChip
                             style="@style/Chip_Single_Style"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Jaipur"></in.probusinsurance.probusdesign.UI.Chip.SingleChip>
+                            android:text="Jaipur"></in.probusinsurance.probusdesign.ui.chip.SingleChip>
 
-                        <in.probusinsurance.probusdesign.UI.Chip.SingleChip
+                        <in.probusinsurance.probusdesign.ui.chip.SingleChip
                             style="@style/Chip_Single_Style"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Hyderabad">
 
-                        </in.probusinsurance.probusdesign.UI.Chip.SingleChip>
+                        </in.probusinsurance.probusdesign.ui.chip.SingleChip>
 
-                        <in.probusinsurance.probusdesign.UI.Chip.SingleChip
+                        <in.probusinsurance.probusdesign.ui.chip.SingleChip
                             style="@style/Chip_Single_Style"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Gurgaon">
 
-                        </in.probusinsurance.probusdesign.UI.Chip.SingleChip>
+                        </in.probusinsurance.probusdesign.ui.chip.SingleChip>
 
-                        <in.probusinsurance.probusdesign.UI.Chip.SingleChip
+                        <in.probusinsurance.probusdesign.ui.chip.SingleChip
                             style="@style/Chip_Single_Style"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Dehli">
 
-                        </in.probusinsurance.probusdesign.UI.Chip.SingleChip>
+                        </in.probusinsurance.probusdesign.ui.chip.SingleChip>
 
-                        <in.probusinsurance.probusdesign.UI.Chip.SingleChip
+                        <in.probusinsurance.probusdesign.ui.chip.SingleChip
                             style="@style/Chip_Single_Style"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Gurgaon">
 
-                        </in.probusinsurance.probusdesign.UI.Chip.SingleChip>
+                        </in.probusinsurance.probusdesign.ui.chip.SingleChip>
 
 
-                    </in.probusinsurance.probusdesign.UI.Chip.ChipGroupSingleSelection>
+                    </in.probusinsurance.probusdesign.ui.chip.ChipGroupSingleSelection>
 
                 </LinearLayout>
 
 
-                <in.probusinsurance.probusdesign.UI.SwitchButton.SwitchButton
+                <in.probusinsurance.probusdesign.ui.switchbutton.SwitchButton
                     style="@style/SwitchButton_Style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:checked="true"></in.probusinsurance.probusdesign.UI.SwitchButton.SwitchButton>
+                    android:checked="true"></in.probusinsurance.probusdesign.ui.switchbutton.SwitchButton>
 
 
-                <in.probusinsurance.probusdesign.UI.EditText.EditTextInput
+                <in.probusinsurance.probusdesign.ui.edittext.EditTextInput
                     android:id="@+id/il_txt"
                     style="@style/EditText_Style_Outline"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <in.probusinsurance.probusdesign.UI.EditText.EmailEditText
+                    <in.probusinsurance.probusdesign.ui.edittext.EmailEditText
                         android:id="@+id/et_txt"
                         style="@style/EditText_Style_Normal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Enter Email"></in.probusinsurance.probusdesign.UI.EditText.EmailEditText>
-                </in.probusinsurance.probusdesign.UI.EditText.EditTextInput>
+                        android:hint="Enter Email"></in.probusinsurance.probusdesign.ui.edittext.EmailEditText>
+                </in.probusinsurance.probusdesign.ui.edittext.EditTextInput>
 
 
-                <in.probusinsurance.probusdesign.UI.Layout.CheckableLinearLayout
+                <in.probusinsurance.probusdesign.ui.layout.CheckableLinearLayout
                     style="@style/Checkable_LinearLayout_Doted"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <in.probusinsurance.probusdesign.UI.CheckBox.SingleCheckBox
+                    <in.probusinsurance.probusdesign.ui.checkbox.SingleCheckBox
                         style="@style/CheckBox_Single_DotRound_No_Margin"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:checked="true" />
 
-                    <in.probusinsurance.probusdesign.UI.CheckBox.SingleCheckBox
+                    <in.probusinsurance.probusdesign.ui.checkbox.SingleCheckBox
                         style="@style/CheckBox_Single_Round_Margin"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -209,13 +209,13 @@
                             android:padding="@dimen/margin_5dp"
                             app:srcCompat="@drawable/icici" />
 
-                        <in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingLarge
+                        <in.probusinsurance.probusdesign.ui.textview.TextViewSubHeadingLarge
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:text="iProtect Smart" />
 
-                        <in.probusinsurance.probusdesign.UI.TextView.TextViewLargeHeading
+                        <in.probusinsurance.probusdesign.ui.textview.TextViewLargeHeading
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
@@ -226,17 +226,17 @@
                     </LinearLayout>
 
 
-                </in.probusinsurance.probusdesign.UI.Layout.CheckableLinearLayout>
+                </in.probusinsurance.probusdesign.ui.layout.CheckableLinearLayout>
 
 
-                <in.probusinsurance.probusdesign.UI.Layout.CheckableLinearLayout
+                <in.probusinsurance.probusdesign.ui.layout.CheckableLinearLayout
                     style="@style/Checkable_LinearLayout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:orientation="horizontal">
 
-                    <in.probusinsurance.probusdesign.UI.CheckBox.SingleCheckBox
+                    <in.probusinsurance.probusdesign.ui.checkbox.SingleCheckBox
                         style="@style/CheckBox_Single_Round_Margin"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -251,7 +251,7 @@
                         android:padding="@dimen/margin_5dp"
                         app:srcCompat="@drawable/icici" />
 
-                    <in.probusinsurance.probusdesign.UI.TextView.TextViewMediumHeading
+                    <in.probusinsurance.probusdesign.ui.textview.TextViewMediumHeading
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -260,26 +260,26 @@
                         android:text="ICICI " />
 
 
-                </in.probusinsurance.probusdesign.UI.Layout.CheckableLinearLayout>
+                </in.probusinsurance.probusdesign.ui.layout.CheckableLinearLayout>
 
 
-                <in.probusinsurance.probusdesign.UI.Button.BackButton
+                <in.probusinsurance.probusdesign.ui.button.BackButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:clickable="true"></in.probusinsurance.probusdesign.UI.Button.BackButton>
+                    android:clickable="true"></in.probusinsurance.probusdesign.ui.button.BackButton>
 
-                <in.probusinsurance.probusdesign.UI.CheckBox.SingleCheckBox
+                <in.probusinsurance.probusdesign.ui.checkbox.SingleCheckBox
                     style="@style/CheckBox_Single_Style"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_back"
-                    android:text="Cover against 19 critical illnesses"></in.probusinsurance.probusdesign.UI.CheckBox.SingleCheckBox>
+                    android:text="Cover against 19 critical illnesses"></in.probusinsurance.probusdesign.ui.checkbox.SingleCheckBox>
 
-                <in.probusinsurance.probusdesign.UI.CheckBox.SingleCheckBox
+                <in.probusinsurance.probusdesign.ui.checkbox.SingleCheckBox
                     style="@style/CheckBox_Single_Style"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Cover against 19 critical illnesses"></in.probusinsurance.probusdesign.UI.CheckBox.SingleCheckBox>
+                    android:text="Cover against 19 critical illnesses"></in.probusinsurance.probusdesign.ui.checkbox.SingleCheckBox>
 
                 <LinearLayout
                     android:id="@+id/ll_checkbox"
@@ -287,57 +287,57 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"></LinearLayout>
 
-                <in.probusinsurance.probusdesign.UI.Button.ButtonRound
+                <in.probusinsurance.probusdesign.ui.button.ButtonRound
                     android:id="@+id/btnround"
                     style="@style/Button_Round_Style"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Continue"
-                    app:isactive="true"></in.probusinsurance.probusdesign.UI.Button.ButtonRound>
+                    app:isactive="true"></in.probusinsurance.probusdesign.ui.button.ButtonRound>
 
-                <in.probusinsurance.probusdesign.UI.Button.ButtonOutline
+                <in.probusinsurance.probusdesign.ui.button.ButtonOutline
                     style="@style/Button_Outline_Style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_10dp"
                     android:text="Download Brochure"
-                    app:icon="@drawable/ic_password_missmatch"></in.probusinsurance.probusdesign.UI.Button.ButtonOutline>
+                    app:icon="@drawable/ic_password_missmatch"></in.probusinsurance.probusdesign.ui.button.ButtonOutline>
 
-                <in.probusinsurance.probusdesign.UI.EditText.EditTextInput
+                <in.probusinsurance.probusdesign.ui.edittext.EditTextInput
                     style="@style/EditText_Style_Outline"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <in.probusinsurance.probusdesign.UI.AutoComplete.AutoComplete
+                    <in.probusinsurance.probusdesign.ui.autocomplete.AutoComplete
                         android:id="@+id/autocomplete_text"
                         style="@style/AutoComplete_Style"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="RTO City"></in.probusinsurance.probusdesign.UI.AutoComplete.AutoComplete>
-                </in.probusinsurance.probusdesign.UI.EditText.EditTextInput>
+                        android:hint="RTO City"></in.probusinsurance.probusdesign.ui.autocomplete.AutoComplete>
+                </in.probusinsurance.probusdesign.ui.edittext.EditTextInput>
 
 
-                <in.probusinsurance.probusdesign.UI.EditText.EditTextInput
+                <in.probusinsurance.probusdesign.ui.edittext.EditTextInput
                     android:id="@+id/editext_inputlayout"
                     style="@style/EditText_Style_Outline"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <in.probusinsurance.probusdesign.UI.EditText.EmailEditText
+                    <in.probusinsurance.probusdesign.ui.edittext.EmailEditText
                         style="@style/EditText_Style_Normal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Email Id *"></in.probusinsurance.probusdesign.UI.EditText.EmailEditText>
+                        android:hint="Email Id *"></in.probusinsurance.probusdesign.ui.edittext.EmailEditText>
 
-                </in.probusinsurance.probusdesign.UI.EditText.EditTextInput>
+                </in.probusinsurance.probusdesign.ui.edittext.EditTextInput>
 
-                <in.probusinsurance.probusdesign.UI.Spinner.Spinner
+                <in.probusinsurance.probusdesign.ui.spinner.Spinner
                     android:id="@+id/spinner"
                     style="@style/Spinner_Style"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                </in.probusinsurance.probusdesign.UI.Spinner.Spinner>
+                </in.probusinsurance.probusdesign.ui.spinner.Spinner>
 
 
             </LinearLayout>
@@ -346,13 +346,13 @@
         </RelativeLayout>
     </ScrollView>
 
-    <in.probusinsurance.probusdesign.UI.Button.ButtonFlat
+    <in.probusinsurance.probusdesign.ui.button.ButtonFlat
         android:id="@+id/btnflat"
         style="@style/Button_Flat_Style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:text="Next"
-        app:isactiveflatbutton="true"></in.probusinsurance.probusdesign.UI.Button.ButtonFlat>
+        app:isactiveflatbutton="true"></in.probusinsurance.probusdesign.ui.button.ButtonFlat>
 
 </RelativeLayout>

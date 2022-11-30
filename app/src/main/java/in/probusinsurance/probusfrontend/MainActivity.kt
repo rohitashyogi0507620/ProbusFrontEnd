@@ -2,10 +2,10 @@ package `in`.probusinsurance.probusfrontend
 
 import `in`.probusinsurance.probusdesign.MasterEntity
 import `in`.probusinsurance.probusdesign.ProbusDesign
-import `in`.probusinsurance.probusdesign.UI.AutoComplete.AutoComplete
-import `in`.probusinsurance.probusdesign.UI.Button.ButtonRound
-import `in`.probusinsurance.probusdesign.UI.EditText.EditTextInput
-import `in`.probusinsurance.probusdesign.UI.Spinner.Spinner
+import `in`.probusinsurance.probusdesign.ui.autocomplete.AutoComplete
+import `in`.probusinsurance.probusdesign.ui.button.ButtonRound
+import `in`.probusinsurance.probusdesign.ui.edittext.EditTextInput
+import `in`.probusinsurance.probusdesign.ui.spinner.Spinner
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -70,11 +70,11 @@ class MainActivity : AppCompatActivity(){
                 Toast.LENGTH_SHORT
             ).show()
         })
-        spinner.setSpinner(
-            this,
-            resources.getStringArray(`in`.probusinsurance.probusdesign.R.array.Idarray_yesno),
-            resources.getStringArray(`in`.probusinsurance.probusdesign.R.array.array_yesno)
-        )
+//        spinner.setSpinner(
+//            this,
+//            resources.getStringArray(`in`.probusinsurance.probusdesign.R.array.Idarray_yesno),
+//            resources.getStringArray(`in`.probusinsurance.probusdesign.R.array.array_yesno)
+//        )
 
 
         // Auto Complete Work

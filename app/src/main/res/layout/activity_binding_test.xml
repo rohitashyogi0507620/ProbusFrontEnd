@@ -8,9 +8,25 @@
     </data>
 
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".BindingTestActivity">
+
+        <in.probusinsurance.probusdesign.button.button.CustomButton
+            android:id="@+id/bntback"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_height="wrap_content"
+            />
+
+        <in.probusinsurance.probusdesign.ui.button.ButtonRound
+            android:id="@+id/libtestbtn"
+            android:layout_width="match_parent"
+            android:text="Hello"
+            app:isactive="true"
+            android:layout_height="wrap_content"/>
+
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"

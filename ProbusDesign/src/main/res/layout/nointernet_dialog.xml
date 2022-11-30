@@ -39,7 +39,7 @@
                     app:lottie_loop="true"
                     app:lottie_rawRes="@raw/nointernet" />
 
-                <in.probusinsurance.probusdesign.UI.TextView.TextViewMediumHeading
+                <in.probusinsurance.probusdesign.ui.textview.TextViewMediumHeading
                     android:id="@+id/txt_alerttitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
                     />
 
 
-                <in.probusinsurance.probusdesign.UI.TextView.TextViewReviewData
+                <in.probusinsurance.probusdesign.ui.textview.TextViewReviewData
                     android:id="@+id/txt_alertmessage"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -58,9 +58,9 @@
                     android:paddingLeft="@dimen/margin_10dp"
                     android:paddingBottom="@dimen/margin_10dp"
                     android:text="@string/no_internet_subheading"
-                    android:textStyle="bold"></in.probusinsurance.probusdesign.UI.TextView.TextViewReviewData>
+                    android:textStyle="bold"></in.probusinsurance.probusdesign.ui.textview.TextViewReviewData>
 
-                <in.probusinsurance.probusdesign.UI.Button.ButtonRound
+                <in.probusinsurance.probusdesign.ui.button.ButtonRound
                     android:id="@+id/btn_ok"
                     style="@style/Button_Round_Style"
                     android:layout_width="wrap_content"
@@ -71,7 +71,7 @@
                     android:padding="@dimen/margin_5dp"
                     android:text="Try Again"
                     android:textAllCaps="false"
-                    app:isactive="true"></in.probusinsurance.probusdesign.UI.Button.ButtonRound>
+                    app:isactive="true"></in.probusinsurance.probusdesign.ui.button.ButtonRound>
 
 
             </LinearLayout>

@@ -20,12 +20,12 @@
     </TextView>
 
 
-    <in.probusinsurance.probusdesign.UI.HeadingRegistrationLayout
+    <in.probusinsurance.probusdesign.ui.HeadingRegistrationLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/margin_10dp"
         app:headingtext="Customer Sign Up"
-        app:subheadingtext="Let's start with basics"></in.probusinsurance.probusdesign.UI.HeadingRegistrationLayout>
+        app:subheadingtext="Let's start with basics"></in.probusinsurance.probusdesign.ui.HeadingRegistrationLayout>
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -33,36 +33,36 @@
         android:gravity="center_vertical|center_horizontal"
         android:orientation="horizontal">
 
-        <in.probusinsurance.probusdesign.UI.RadioButton.RadioButtonGender
+        <in.probusinsurance.probusdesign.ui.radiobutton.RadioButtonGender
             style="@style/RadioButton_Gender_Style"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/margin_5dp"
             android:layout_weight="1"
-            android:text="Male"></in.probusinsurance.probusdesign.UI.RadioButton.RadioButtonGender>
+            android:text="Male"></in.probusinsurance.probusdesign.ui.radiobutton.RadioButtonGender>
 
-        <in.probusinsurance.probusdesign.UI.RadioButton.RadioButtonGender
+        <in.probusinsurance.probusdesign.ui.radiobutton.RadioButtonGender
             style="@style/RadioButton_Gender_Style"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/margin_5dp"
             android:layout_weight="1"
-            android:text="Female"></in.probusinsurance.probusdesign.UI.RadioButton.RadioButtonGender>
+            android:text="Female"></in.probusinsurance.probusdesign.ui.radiobutton.RadioButtonGender>
     </RadioGroup>
 
-    <in.probusinsurance.probusdesign.UI.Chip.SingleChip
+    <in.probusinsurance.probusdesign.ui.chip.SingleChip
         style="@style/Chip_Single_Style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Jaipur"></in.probusinsurance.probusdesign.UI.Chip.SingleChip>
+        android:text="Jaipur"></in.probusinsurance.probusdesign.ui.chip.SingleChip>
 
-    <in.probusinsurance.probusdesign.UI.Button.ButtonRound
+    <in.probusinsurance.probusdesign.ui.button.ButtonRound
         android:id="@+id/btnround"
         style="@style/Button_Round_Style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Continue"
-        app:isactive="true"></in.probusinsurance.probusdesign.UI.Button.ButtonRound>
+        app:isactive="true"></in.probusinsurance.probusdesign.ui.button.ButtonRound>
 
 
 </LinearLayout>

@@ -1,10 +1,10 @@
 package `in`.probusinsurance.probusfrontend
 
 import `in`.probusinsurance.probusdesign.MasterEntity
-import `in`.probusinsurance.probusdesign.UI.Dialog.AlertDialog
-import `in`.probusinsurance.probusdesign.UI.HeadingWithCustomChipLayout
-import `in`.probusinsurance.probusdesign.UI.HeadingWithFixChipLayout
-import `in`.probusinsurance.probusdesign.UI.Layout.ProgessLayout
+import `in`.probusinsurance.probusdesign.ui.dialog.AlertDialog
+import `in`.probusinsurance.probusdesign.ui.HeadingWithCustomChipLayout
+import `in`.probusinsurance.probusdesign.ui.HeadingWithFixChipLayout
+import `in`.probusinsurance.probusdesign.ui.layout.ProgessLayout
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup

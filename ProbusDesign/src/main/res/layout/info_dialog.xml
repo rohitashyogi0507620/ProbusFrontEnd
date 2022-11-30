@@ -30,7 +30,7 @@
                 android:orientation="vertical">
 
 
-                <in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingLarge
+                <in.probusinsurance.probusdesign.ui.textview.TextViewSubHeadingLarge
                     android:id="@+id/txt_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
                     app:lottie_rawRes="@raw/info" />
 
 
-                <in.probusinsurance.probusdesign.UI.TextView.TextViewMediumHeading
+                <in.probusinsurance.probusdesign.ui.textview.TextViewMediumHeading
                     android:id="@+id/txt_alerttitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
                      />
 
 
-                <in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingLight
+                <in.probusinsurance.probusdesign.ui.textview.TextViewSubHeadingLight
                     android:id="@+id/txt_alertmessage"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -71,9 +71,9 @@
                     android:fontFamily="@font/montserrat_medium"
                     android:gravity="center"
                     android:text="Message"
-                    android:visibility="gone"></in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingLight>
+                    android:visibility="gone"></in.probusinsurance.probusdesign.ui.textview.TextViewSubHeadingLight>
 
-                <in.probusinsurance.probusdesign.UI.Button.ButtonRound
+                <in.probusinsurance.probusdesign.ui.button.ButtonRound
                     android:id="@+id/btn_ok"
                     style="@style/Button_Round_Style"
                     android:layout_width="wrap_content"
@@ -84,7 +84,7 @@
                     android:padding="@dimen/margin_5dp"
                     android:text="Ok"
                     android:textAllCaps="false"
-                    app:isactive="true"></in.probusinsurance.probusdesign.UI.Button.ButtonRound>
+                    app:isactive="true"></in.probusinsurance.probusdesign.ui.button.ButtonRound>
 
 
             </LinearLayout>

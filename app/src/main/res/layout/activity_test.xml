@@ -18,24 +18,24 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <in.probusinsurance.probusdesign.UI.HeadingRegistrationLayout
+            <in.probusinsurance.probusdesign.ui.HeadingRegistrationLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:headingtext="Hello"
                 app:subheadingtext="Please add">
 
-            </in.probusinsurance.probusdesign.UI.HeadingRegistrationLayout>
+            </in.probusinsurance.probusdesign.ui.HeadingRegistrationLayout>
 
-            <in.probusinsurance.probusdesign.UI.HeadingWithFixChipLayout
+            <in.probusinsurance.probusdesign.ui.HeadingWithFixChipLayout
                 android:id="@+id/layout_yesno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:ischecked="true"
                 app:withoutchip="true"
                 app:subtitle="Select yes if you want to get whatsapp message"
-                app:title="Allow to Send Text Message"></in.probusinsurance.probusdesign.UI.HeadingWithFixChipLayout>
+                app:title="Allow to Send Text Message"></in.probusinsurance.probusdesign.ui.HeadingWithFixChipLayout>
 
-            <in.probusinsurance.probusdesign.UI.HeadingWithFixChipLayout
+            <in.probusinsurance.probusdesign.ui.HeadingWithFixChipLayout
                 android:id="@+id/whatsapp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -44,16 +44,16 @@
                 app:isCustomChip="true"
                 app:ischecked="false"
                 app:subtitle="Select yes if you want to get whatsapp message"
-                app:title="Send hatsapp"></in.probusinsurance.probusdesign.UI.HeadingWithFixChipLayout>
+                app:title="Send hatsapp"></in.probusinsurance.probusdesign.ui.HeadingWithFixChipLayout>
 
-            <in.probusinsurance.probusdesign.UI.HeadingWithCustomChipLayout
+            <in.probusinsurance.probusdesign.ui.HeadingWithCustomChipLayout
                 android:id="@+id/layout_city"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:headingtitle="Please select city from above list"
                 app:subheadingtitle="Select city from list">
 
-            </in.probusinsurance.probusdesign.UI.HeadingWithCustomChipLayout>
+            </in.probusinsurance.probusdesign.ui.HeadingWithCustomChipLayout>
 
             <com.mukesh.mukeshotpview.mukeshOtpView.MukeshOtpView
                 android:id="@+id/simpleOtpView"
@@ -70,56 +70,56 @@
                 app:state_filled="true"
                 app:viewType="line" />
 
-            <in.probusinsurance.probusdesign.UI.Button.ButtonRound
+            <in.probusinsurance.probusdesign.ui.button.ButtonRound
                 style="@style/Button_Round_Style"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="info_dialog"
                 android:text="Info Dialog"
-                app:isactive="true"></in.probusinsurance.probusdesign.UI.Button.ButtonRound>
+                app:isactive="true"></in.probusinsurance.probusdesign.ui.button.ButtonRound>
 
-            <in.probusinsurance.probusdesign.UI.Button.ButtonRound
+            <in.probusinsurance.probusdesign.ui.button.ButtonRound
                 style="@style/Button_Round_Style"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="error_dialog"
                 android:text="Error Dialog"
-                app:isactive="true"></in.probusinsurance.probusdesign.UI.Button.ButtonRound>
+                app:isactive="true"></in.probusinsurance.probusdesign.ui.button.ButtonRound>
 
-            <in.probusinsurance.probusdesign.UI.Button.ButtonRound
+            <in.probusinsurance.probusdesign.ui.button.ButtonRound
                 style="@style/Button_Round_Style"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="exit_dialog"
                 android:text="Exit Dialog"
-                app:isactive="true"></in.probusinsurance.probusdesign.UI.Button.ButtonRound>
+                app:isactive="true"></in.probusinsurance.probusdesign.ui.button.ButtonRound>
 
-            <in.probusinsurance.probusdesign.UI.Button.ButtonRound
+            <in.probusinsurance.probusdesign.ui.button.ButtonRound
                 style="@style/Button_Round_Style"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="success_dialog"
                 android:text="Success Dialog"
-                app:isactive="true"></in.probusinsurance.probusdesign.UI.Button.ButtonRound>
+                app:isactive="true"></in.probusinsurance.probusdesign.ui.button.ButtonRound>
 
-            <in.probusinsurance.probusdesign.UI.Button.ButtonRound
+            <in.probusinsurance.probusdesign.ui.button.ButtonRound
                 style="@style/Button_Round_Style"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="nointernet_dialog"
                 android:text="No Internet Dialog"
-                app:isactive="true"></in.probusinsurance.probusdesign.UI.Button.ButtonRound>
+                app:isactive="true"></in.probusinsurance.probusdesign.ui.button.ButtonRound>
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
-    <in.probusinsurance.probusdesign.UI.Layout.ProgessLayout
+    <in.probusinsurance.probusdesign.ui.layout.ProgessLayout
         android:id="@+id/layout_progess"
         android:layout_width="match_parent"
         app:showprogess="false"
         app:containlayoutenable="false"
         app:animationfile="@raw/progess_2"
         android:layout_height="match_parent">
-    </in.probusinsurance.probusdesign.UI.Layout.ProgessLayout>
+    </in.probusinsurance.probusdesign.ui.layout.ProgessLayout>
 
 </RelativeLayout>

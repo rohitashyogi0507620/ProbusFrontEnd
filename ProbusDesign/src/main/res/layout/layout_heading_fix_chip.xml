@@ -14,12 +14,12 @@
         android:layout_height="wrap_content"
         android:gravity="center_vertical">
 
-        <in.probusinsurance.probusdesign.UI.TextView.TextViewSmallHeading
+        <in.probusinsurance.probusdesign.ui.textview.TextViewSmallHeading
             android:id="@+id/txt_heading"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint=""></in.probusinsurance.probusdesign.UI.TextView.TextViewSmallHeading>
+            android:hint=""></in.probusinsurance.probusdesign.ui.textview.TextViewSmallHeading>
 
         <View
             android:layout_gravity="center"
@@ -30,21 +30,21 @@
 
     </LinearLayout>
 
-    <in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingLight
+    <in.probusinsurance.probusdesign.ui.textview.TextViewSubHeadingLight
         android:id="@+id/txt_subheading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_5dp"
-        android:hint=""></in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingLight>
+        android:hint=""></in.probusinsurance.probusdesign.ui.textview.TextViewSubHeadingLight>
 
-    <in.probusinsurance.probusdesign.UI.Chip.ChipGroupSingleSelection
+    <in.probusinsurance.probusdesign.ui.chip.ChipGroupSingleSelection
         android:id="@+id/chip_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_10dp"
         app:checkedChip="@+id/chip_yes">
 
-        <in.probusinsurance.probusdesign.UI.Chip.SingleChip
+        <in.probusinsurance.probusdesign.ui.chip.SingleChip
             android:id="@+id/chip_yes"
             style="@style/Chip_Single_Style"
             android:layout_width="wrap_content"
@@ -52,7 +52,7 @@
             android:gravity="center"
             android:text="Yes" />
 
-        <in.probusinsurance.probusdesign.UI.Chip.SingleChip
+        <in.probusinsurance.probusdesign.ui.chip.SingleChip
             android:id="@+id/chip_no"
             style="@style/Chip_Single_Style"
             android:layout_width="wrap_content"
@@ -61,6 +61,6 @@
             android:gravity="center"
             android:text="No" />
 
-    </in.probusinsurance.probusdesign.UI.Chip.ChipGroupSingleSelection>
+    </in.probusinsurance.probusdesign.ui.chip.ChipGroupSingleSelection>
 
 </LinearLayout>

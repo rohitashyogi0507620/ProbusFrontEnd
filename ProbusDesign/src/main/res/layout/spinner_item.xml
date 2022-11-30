@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<in.probusinsurance.probusdesign.UI.TextView.TextViewSmallHeading xmlns:android="http://schemas.android.com/apk/res/android"
+<in.probusinsurance.probusdesign.ui.textview.TextViewSmallHeading xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/item_text"
     style="@style/EditText_Style_Normal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:focusable="false"
     android:text="Select"
-    android:textAppearance="@style/EditText_Style_Normal"></in.probusinsurance.probusdesign.UI.TextView.TextViewSmallHeading>
+    android:textAppearance="@style/EditText_Style_Normal"></in.probusinsurance.probusdesign.ui.textview.TextViewSmallHeading>

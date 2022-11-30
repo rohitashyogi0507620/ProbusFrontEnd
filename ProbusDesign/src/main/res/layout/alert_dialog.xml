@@ -30,7 +30,7 @@
                 android:orientation="vertical">
 
 
-                <in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingLarge
+                <in.probusinsurance.probusdesign.ui.textview.TextViewSubHeadingLarge
                     android:id="@+id/txt_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
                     app:lottie_loop="true"
                     app:lottie_rawRes="@raw/error" />
 
-                <in.probusinsurance.probusdesign.UI.TextView.TextViewMediumHeading
+                <in.probusinsurance.probusdesign.ui.textview.TextViewMediumHeading
                     android:id="@+id/txt_alerttitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
                      />
 
 
-                <in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingLight
+                <in.probusinsurance.probusdesign.ui.textview.TextViewSubHeadingLight
                     android:gravity="center"
                     android:visibility="gone"
                     android:id="@+id/txt_alertmessage"
@@ -71,9 +71,9 @@
                     android:paddingLeft="@dimen/margin_10dp"
                     android:paddingBottom="@dimen/margin_10dp"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="Message"></in.probusinsurance.probusdesign.UI.TextView.TextViewSubHeadingLight>
+                    android:text="Message"></in.probusinsurance.probusdesign.ui.textview.TextViewSubHeadingLight>
 
-                <in.probusinsurance.probusdesign.UI.Button.ButtonRound
+                <in.probusinsurance.probusdesign.ui.button.ButtonRound
                     android:id="@+id/btn_ok"
                     style="@style/Button_Round_Style"
                     android:layout_width="wrap_content"
@@ -84,7 +84,7 @@
                     android:layout_margin="@dimen/margin_5dp"
                     android:padding="@dimen/margin_5dp"
                     android:text="Ok"
-                    android:textAllCaps="false"></in.probusinsurance.probusdesign.UI.Button.ButtonRound>
+                    android:textAllCaps="false"></in.probusinsurance.probusdesign.ui.button.ButtonRound>
 
 
             </LinearLayout>
