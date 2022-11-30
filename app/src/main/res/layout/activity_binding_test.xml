@@ -27,6 +27,12 @@
             app:isactive="true"
             android:layout_height="wrap_content"/>
 
+        <in.probusinsurance.probusdesign.ui.spinner.Spinner
+            android:layout_width="match_parent"
+            android:id="@+id/spinner"
+            style="@style/Spinner_Style"
+            android:layout_height="wrap_content"/>
+
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
