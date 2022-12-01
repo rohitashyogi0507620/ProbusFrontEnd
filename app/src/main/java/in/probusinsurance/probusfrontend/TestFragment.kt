@@ -1,36 +1,46 @@
 package `in`.probusinsurance.probusfrontend
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
+import `in`.probusinsurance.probusdesign.MasterEntity
+import `in`.probusinsurance.probusfrontend.databinding.FragmentTestBinding
+import android.widget.Toast
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 
 
-class TestFragment : Fragment() {
-
-    companion object {
-        fun newInstance() = TestFragment()
+class TestFragment : BaseFragment<FragmentTestBinding, TestViewModel>() {
+    override fun getLayoutId(): Int {
+        return R.layout.fragment_test
     }
 
-    private lateinit var viewModel: TestViewModel
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_test, container, false)
+    override fun buildViewModel(): TestViewModel {
+        return ViewModelProvider(this).get(TestViewModel::class.java)
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(TestViewModel::class.java)
-//        val alertdialog: Dialog = AlertDialog.ErrorDialog(requireActivity(), "Hello Bro This is erro dialog")
-//        val btnok = alertdialog.findViewById<Button>(`in`.probusinsurance.probusdesign.R.id.btn_ok)
-//        btnok.setOnClickListener { view1: View? -> alertdialog.dismiss() }
-   //     loadTable()
 
+    override fun getBundle() {
+    }
+
+    override fun initViews() {
+        var list = arrayListOf<MasterEntity>()
+        list.add(MasterEntity("Select Education *", "Select Education *"))
+        list.add(MasterEntity("12", "12 th Pass"))
+        list.add(MasterEntity("10", "10 th Pass"))
+        list.add(MasterEntity("15", "Graduation"))
+        list.add(MasterEntity("18 ", "Post Graduation"))
+        binding.spinner.setSpinner(requireActivity(), list)
+    }
+
+    override fun initLiveDataObservers() {
+        binding.spinner.selectedItem.observe(this, Observer {
+            Toast.makeText(
+                context,
+                it.Name + " : " + it.Id,
+                Toast.LENGTH_SHORT
+            ).show()
+        })
+    }
+
+    override fun onClickListener() {
     }
 
 
