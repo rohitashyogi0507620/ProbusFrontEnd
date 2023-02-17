@@ -63,7 +63,6 @@ class ProgessLayout(context: Context?, attrs: AttributeSet?) : RelativeLayout(
                 containtLayoutEnable = false
             }
 
-
             setShowProgress(progess)
             setanimationFile(animationfile)
             setProgessBackground(progessBackground)

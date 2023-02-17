@@ -45,8 +45,7 @@ class TestActivity : AppCompatActivity() {
         //customlayout.setChipItems(this, resources.getStringArray(`in`.probusinsurance.probusdesign.R.array.IdArray_City), resources.getStringArray(`in`.probusinsurance.probusdesign.R.array.NameArray_City))
         //customlayout.autoFillById("2020")
         //customlayout.autoFillById("AJ")
-        var data =
-            resources.getStringArray(`in`.probusinsurance.probusdesign.R.array.NameArray_City)
+        var data = resources.getStringArray(`in`.probusinsurance.probusdesign.R.array.NameArray_City)
         var datalist: MutableList<MasterEntity>
         datalist = mutableListOf()
         data.forEachIndexed { index, s ->
