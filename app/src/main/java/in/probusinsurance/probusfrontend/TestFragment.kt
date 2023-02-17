@@ -1,6 +1,7 @@
 package `in`.probusinsurance.probusfrontend
 
 import `in`.probusinsurance.probusdesign.MasterEntity
+import `in`.probusinsurance.probusdesign.ui.dialog.AlertDialog
 import `in`.probusinsurance.probusfrontend.databinding.FragmentTestBinding
 import android.widget.Toast
 import androidx.lifecycle.Observer
@@ -28,6 +29,9 @@ class TestFragment : BaseFragment<FragmentTestBinding, TestViewModel>() {
         list.add(MasterEntity("15", "Graduation"))
         list.add(MasterEntity("18 ", "Post Graduation"))
         binding.spinner.setSpinner(requireActivity(), list)
+
+        AlertDialog.ErrorDialog(requireContext(), "Error while proposal","your data is not match with data base and and name is not found","Try Again").show()
+
     }
 
     override fun initLiveDataObservers() {

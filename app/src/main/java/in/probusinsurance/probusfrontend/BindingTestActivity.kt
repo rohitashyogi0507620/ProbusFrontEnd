@@ -1,8 +1,10 @@
 package `in`.probusinsurance.probusfrontend
 
 import `in`.probusinsurance.probusdesign.MasterEntity
+import `in`.probusinsurance.probusdesign.ui.dialog.AlertDialog
 import `in`.probusinsurance.probusfrontend.databinding.ActivityBindingTestBinding
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -46,7 +48,11 @@ class BindingTestActivity : BaseActivity<ActivityBindingTestBinding, TestViewMod
                 Toast.LENGTH_SHORT
             ).show()
         })
+
+
     }
+
+
 
     override fun onClickListener() {
 

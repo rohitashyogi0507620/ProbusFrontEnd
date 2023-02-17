@@ -63,6 +63,8 @@ class MainActivity : AppCompatActivity(){
         // spinner.autoFillById("10")
         // spinner.autoFillByMaster(MasterEntity("18 ", "Post Graduation"))
 
+        startActivity(Intent(this,TestActivity::class.java))
+
         spinner.selectedItem.observe(this, Observer {
             Toast.makeText(
                 applicationContext,
