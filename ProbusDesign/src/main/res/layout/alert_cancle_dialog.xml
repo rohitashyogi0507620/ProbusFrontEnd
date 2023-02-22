@@ -29,6 +29,7 @@
                 android:layout_gravity="center"
                 android:orientation="vertical">
 
+
                 <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/animation_view"
                     android:layout_width="@dimen/alert_icon_size"

@@ -31,6 +31,7 @@ class TestFragment : BaseFragment<FragmentTestBinding, TestViewModel>() {
         binding.spinner.setSpinner(requireActivity(), list)
 
         AlertDialog.ErrorDialog(requireContext(), "Error while proposal","your data is not match with data base and and name is not found","Try Again").show()
+        AlertDialog.SuccessDialog(requireContext(), "Error while proposal","your data is not match with data base and and name is not found")
 
     }
 
