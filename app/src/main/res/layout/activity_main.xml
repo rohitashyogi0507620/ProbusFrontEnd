@@ -303,6 +303,16 @@
                     android:text="Download Brochure"
                     app:icon="@drawable/ic_password_missmatch"></in.probusinsurance.probusdesign.ui.button.ButtonOutline>
 
+                <in.probusinsurance.probusdesign.ui.LottieAnimation
+                    android:id="@+id/animation_view"
+                    android:layout_width="@dimen/alert_icon_size"
+                    android:layout_height="@dimen/alert_icon_size"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_10dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/info" />
+
                 <in.probusinsurance.probusdesign.ui.edittext.EditTextInput
                     style="@style/EditText_Style_Outline"
                     android:layout_width="match_parent"
