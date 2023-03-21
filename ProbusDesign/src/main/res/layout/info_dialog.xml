@@ -79,7 +79,7 @@
                         android:layout_marginEnd="@dimen/margin_5dp"
                         android:layout_marginBottom="@dimen/margin_5dp"
                         android:padding="@dimen/margin_5dp"
-                        android:text="Cancle"
+                        android:text="@string/cancel"
                         android:textAllCaps="false"></in.probusinsurance.probusdesign.ui.button.ButtonOutline>
 
                     <in.probusinsurance.probusdesign.ui.button.ButtonRound

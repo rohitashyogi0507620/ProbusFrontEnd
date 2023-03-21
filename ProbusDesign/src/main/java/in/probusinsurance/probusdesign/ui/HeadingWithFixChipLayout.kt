@@ -46,8 +46,7 @@ class HeadingWithFixChipLayout(context: Context, attrs: AttributeSet) :
 
         inflate(context, R.layout.layout_heading_fix_chip, this)
 
-        val customAttributesStyle =
-            context.obtainStyledAttributes(attrs, R.styleable.HeadingWithFixChipLayout, 0, 0)
+        val customAttributesStyle = context.obtainStyledAttributes(attrs, R.styleable.HeadingWithFixChipLayout, 0, 0)
         _heading = findViewById(R.id.txt_heading)
         _subheading = findViewById(R.id.txt_subheading)
         _chipgroup = findViewById(R.id.chip_group)
