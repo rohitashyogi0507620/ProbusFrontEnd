@@ -255,9 +255,4 @@
 
 
 
-    <dimen name="text_Subheading_Light_Size">14sp</dimen>
-    <dimen name="editext_txt_size">16sp</dimen>
-    <dimen name="button_corner_16dp">16dp</dimen>
-    <dimen name="margin_14dp">14dp</dimen>
-    <dimen name="text_Heading_Medium_Size">16sp</dimen>
 </resources>
