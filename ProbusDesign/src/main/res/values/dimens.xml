@@ -2,16 +2,16 @@
 <resources>
 
     <dimen name="button_corner_8dp">8dp</dimen>
-    <dimen name="button_textsize_14sp">14sp</dimen>
+    <dimen name="button_textsize_14sp">14dp</dimen>
     <dimen name="button_padding_12dp">12dp</dimen>
 
     //Text Size Headings
-    <dimen name="text_Heading_Large_Size">20sp</dimen>
-    <dimen name="text_Heading_Small_Size">16sp</dimen>
-    <dimen name="text_SubHeading_Large_Size">14sp</dimen>
-    <dimen name="text_Subheading_Small_Size">12sp</dimen>
+    <dimen name="text_Heading_Large_Size">20dp</dimen>
+    <dimen name="text_Heading_Small_Size">16dp</dimen>
+    <dimen name="text_SubHeading_Large_Size">14dp</dimen>
+    <dimen name="text_Subheading_Small_Size">12dp</dimen>
 
-    <dimen name="chip_text_size">12sp</dimen>
+    <dimen name="chip_text_size">12dp</dimen>
     <dimen name="margin_20dp">20dp</dimen>
     <dimen name="line_width">21dp</dimen>
     <dimen name="line_height">2dp</dimen>
@@ -24,10 +24,10 @@
     <dimen name="margin_15dp">15dp</dimen>
 
     <dimen name="margin_12dp">12dp</dimen>
-    <dimen name="radiobutton_text_size">16sp</dimen>
+    <dimen name="radiobutton_text_size">16dp</dimen>
     <dimen name="switch_button_thumbsize">26dp</dimen>
     <dimen name="switch_button_tracksize">26dp</dimen>
-    <dimen name="alert_icon_size">80sp</dimen>
+    <dimen name="alert_icon_size">80dp</dimen>
     <dimen name="corner_dialog">12dp</dimen>
     <dimen name="progess_icon_size">100dp</dimen>
 
