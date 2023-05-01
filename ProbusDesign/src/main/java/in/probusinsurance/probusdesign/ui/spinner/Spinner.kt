@@ -33,6 +33,7 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
         this.layout(R.layout.spinner_item,0,0,0)
         list_Item = arrayListOf()
         this.setBackgroundDrawable(resources.getDrawable(R.drawable.background_spinner))
+
         this.setOnItemSelectedListener(object : OnItemSelectedListener {
                 override fun onItemSelected(
                     adapterView: AdapterView<*>?,
@@ -40,8 +41,10 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
                     i: Int,
                     l: Long
                 ) {
-                    _selectedItem.postValue(list_Item.get(i))
-                    _itemposition.postValue(i)
+                    if (list_Item!=null){
+                        _selectedItem.postValue(list_Item.get(i))
+                        _itemposition.postValue(i)
+                    }
 
                 }
 
