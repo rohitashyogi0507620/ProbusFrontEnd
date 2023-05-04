@@ -37,7 +37,7 @@ class Spinner(context: Context?, attrs: AttributeSet?) : androidx.appcompat.widg
         this.setOnItemSelectedListener(object : OnItemSelectedListener {
                 override fun onItemSelected(
                     adapterView: AdapterView<*>?,
-                    view: View,
+                    view: View?,
                     i: Int,
                     l: Long
                 ) {
