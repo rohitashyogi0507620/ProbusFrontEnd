@@ -7,8 +7,10 @@ import android.content.Context
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View.OnTouchListener
+import android.view.inputmethod.InputMethodManager
 import android.widget.AdapterView.OnItemClickListener
 import android.widget.ArrayAdapter
+import androidx.core.content.ContextCompat.getSystemService
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 
@@ -24,6 +26,7 @@ class AutoComplete(context: Context, attrs: AttributeSet?) :
         get() = _itemposition
 
     var list_Item: List<MasterEntity>
+    lateinit var contextActivity: Activity
 
     init {
         list_Item = arrayListOf()
@@ -41,12 +44,15 @@ class AutoComplete(context: Context, attrs: AttributeSet?) :
             _itemposition.postValue(i)
             this.setSelection(this.text.length)
             this.error=null
+            val inputMethodManager = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            inputMethodManager.hideSoftInputFromWindow(applicationWindowToken, 0)
         })
 
 
     }
 
     fun setAutoComplete(context: Activity, list: List<MasterEntity>) {
+        contextActivity=context
         list_Item = list
         this.setAdapter<ArrayAdapter<MasterEntity>>(
             ArrayAdapter<MasterEntity>(
@@ -59,7 +65,7 @@ class AutoComplete(context: Context, attrs: AttributeSet?) :
     }
 
     fun setAutoComplete(context: Activity, listId: Array<String>) {
-
+        contextActivity=context
         var listitem = mutableListOf<MasterEntity>()
         for (i in listId.indices) {
             listitem.add(MasterEntity(listId[i], listId[i]))
@@ -78,7 +84,7 @@ class AutoComplete(context: Context, attrs: AttributeSet?) :
     }
 
     fun setAutoComplete(context: Activity, listId: Array<String>, listname: Array<String>) {
-
+        contextActivity=context
         var listitem = mutableListOf<MasterEntity>()
         for (i in listId.indices) {
             listitem.add(MasterEntity(listId[i], listname[i]))
