@@ -35,8 +35,10 @@ public class SpinnerItemMasterEntryAdapter extends ArrayAdapter<MasterEntity> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-
-        String rowItem = list.get(position).getName();
+        String rowItem="";
+        if (list != null) {
+            rowItem = list.get(position).getName();
+        }
         View rowview = layoutInflater.inflate(R.layout.spinner_item, null, true);
         TextView txtTitle = rowview.findViewById(R.id.item_text);
         txtTitle.setText(rowItem);
@@ -47,8 +49,10 @@ public class SpinnerItemMasterEntryAdapter extends ArrayAdapter<MasterEntity> {
 
     public void setError(View v, CharSequence s) {
         TextView name = (TextView) v.findViewById(R.id.item_text);
-        name.setTextColor(context.getResources().getColor(R.color.color_inputlayout_error));
-        name.setError(s);
+        if (name!=null) {
+            name.setTextColor(context.getResources().getColor(R.color.color_inputlayout_error));
+            name.setError(s);
+        }
     }
 
 
